@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head><link rel="icon" href="img/logo/logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Best | Vestuário de Luxo & Moda Premium</title>
+  <meta name="description" content="Catálogo exclusivo da marca The Best. Roupas minimalistas, elegantes e com materiais de alta qualidade.">
+  
+  <!-- SEO / OpenGraph -->
+  <meta property="og:title" content="The Best | Luxury Clothing">
+  <meta property="og:description" content="Descubra a nova colecção minimalista e luxuosa.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1600">
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+    <img src="img/logo/logo.png" alt="The Best">
+</a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link active">Início</a>
+        <a href="produtos.html" class="nav-link">Colecção</a>
+        <a href="sobre.html" class="nav-link">Sobre</a>
+        <a href="contactos.html" class="nav-link">Contactos</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="cart-btn" aria-label="Carrinho">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="badge cart-badge">0</span>
+        </button>
+        <div class="mobile-toggle" id="mobile-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content animate-fade-in">
+      <p class="hero-subtitle">Elegância & Exclusividade</p>
+      <h1 class="hero-title">The Best Collection</h1>
+      <div class="hero-buttons">
+        <a href="produtos.html" class="btn-primary pulse-gold">Ver Colecção</a>
+        <a href="https://wa.me/258840000000" target="_blank" class="btn-secondary">Comprar Agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produtos em Destaque -->
+  <section style="max-width: var(--max-width); margin: 5rem auto; padding: 0 2rem;">
+    <h2 style="font-family: var(--font-heading); text-align: center; color: var(--color-gold); font-size: 2rem; margin-bottom: 2rem;">
+      Produtos em Destaque
+    </h2>
+    <div class="products-grid" id="featured-products">
+      <!-- Inserido dinamicamente via JS -->
+    </div>
+  </section>
+
+  <!-- Drawer Carrinho -->
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h3 style="font-family: var(--font-heading);">Seu Carrinho</h3>
+      <button id="close-cart" style="background:none; color:#fff; font-size:1.5rem; cursor:pointer;">&times;</button>
+    </div>
+    <div class="cart-body" id="cart-items-container"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cart-total-price" style="color:var(--color-gold);">0.00 MT</span>
+      </div>
+      <button class="btn-primary" style="width:100%;" onclick="WhatsAppModule.checkoutCart()">Finalizar no WhatsApp</button>
+    </div>
+  </aside>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <h3 class="footer-title">THE BEST</h3>
+        <p style="color:#888; font-size:0.9rem;">Definição máxima de estilo, luxo e presença urbana.</p>
+      </div>
+      <div>
+        <h4 class="footer-title">Links Rápidos</h4>
+        <ul class="footer-links">
+          <li><a href="produtos.html">Colecção Completa</a></li>
+          <li><a href="sobre.html">Nossa História</a></li>
+          <li><a href="contactos.html">Atendimento</a></li>
+          <li><a href="admin.html">Painel Demo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Newsletter</h4>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscrito com sucesso!');">
+          <input type="email" placeholder="Seu e-mail..." class="newsletter-input" required>
+          <button type="submit" class="btn-primary">OK</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 The Best. Todos os direitos reservados.
+    </div>
+  </footer>
+
+<script src="js/prices.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/whatsapp.js"></script>
+<script src="js/main.js"></script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('featured-products');
+      const items = ProductsManager.getAll().slice(0, 4);
+      
+      container.innerHTML = items.map(p => `
+        <div class="product-card">
+          <div class="product-image-container">
+            <div class="tags">
+              ${p.isNew ? '<span class="tag tag-new">Novo</span>' : ''}
+              ${p.isSale ? '<span class="tag tag-sale">Promoção</span>' : ''}
+            </div>
+            <img src="${p.image}" class="product-image" alt="${p.name}" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-category">${p.category}</span>
+            <h3 class="product-title">${p.name}</h3>
+            <div class="product-price">
+              ${p.oldPrice ? `<span class="old-price">${ProductsManager.formatMoney(p.oldPrice)}</span>` : ""}
+              ${ProductsManager.formatMoney(ProductsManager.getPrice(p)
+)}
+            </div>
+            <div class="product-actions">
+              <a href="produto.html?id=${p.id}" class="btn-secondary" style="font-size:0.7rem; padding:0.6rem;">Detalhes</a>
+              <button onclick="WhatsAppModule.buySingleProduct(ProductsManager.getById('${p.id}'))" class="btn-primary" style="font-size:0.7rem; padding:0.6rem;">Comprar</button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    });
+  </script>
+</body>
+</html>

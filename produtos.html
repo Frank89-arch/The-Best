@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colecção | The Best</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .catalog-layout {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      gap: 2rem;
+      max-width: var(--max-width);
+      margin: 8rem auto 4rem;
+      padding: 0 2rem;
+    }
+    .filter-box {
+      background: var(--color-dark-gray);
+      padding: 1.5rem;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    .filter-group { margin-bottom: 1.5rem; }
+    .filter-group h4 { color: var(--color-gold); margin-bottom: 0.8rem; }
+    .filter-group select, .filter-group input {
+      width: 100%;
+      padding: 0.6rem;
+      background: var(--color-black);
+      color: #fff;
+      border: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay" id="overlay"></div>
+
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo-text">The <span>Best</span></a>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="produtos.html" class="nav-link active">Colecção</a>
+        <a href="sobre.html" class="nav-link">Sobre</a>
+        <a href="contactos.html" class="nav-link">Contactos</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="cart-btn"><i class="fas fa-shopping-bag"></i><span class="badge cart-badge">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="catalog-layout">
+    <!-- Filtros -->
+    <aside class="filter-box">
+      <h3 style="font-family: var(--font-heading); margin-bottom:1.5rem;">Filtros</h3>
+      <div class="filter-group">
+        <h4>Pesquisa</h4>
+        <input type="text" id="search-input" placeholder="Buscar produto...">
+      </div>
+      <div class="filter-group">
+        <h4>Categoria</h4>
+        <select id="category-filter">
+          <option value="all">Todas</option>
+          <option value="T-Shirts">T-Shirts</option>
+          <option value="Hoodies">Hoodies</option>
+          <option value="Calças">Calças</option>
+          <option value="Bonés">Bonés</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <h4>Ordenar Por</h4>
+        <select id="sort-filter">
+          <option value="newest">Mais Recentes</option>
+          <option value="price-low">Menor Preço</option>
+          <option value="price-high">Maior Preço</option>
+        </select>
+      </div>
+    </aside>
+
+    <!-- Lista de Produtos -->
+    <section>
+      <div class="products-grid" id="catalog-products"></div>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h3>Seu Carrinho</h3>
+      <button id="close-cart" style="background:none; color:#fff; font-size:1.5rem;">&times;</button>
+    </div>
+    <div class="cart-body" id="cart-items-container"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total:</span><span id="cart-total-price">0.00 MT</span></div>
+      <button class="btn-primary" style="width:100%;" onclick="WhatsAppModule.checkoutCart()">Finalizar no WhatsApp</button>
+    </div>
+  </aside>
+
+  <script src="js/products.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const render = () => {
+        const query = document.getElementById('search-input').value;
+        const category = document.getElementById('category-filter').value;
+        const sortBy = document.getElementById('sort-filter').value;
+
+        const filtered = SearchModule.filter(ProductsManager.getAll(), { searchQuery: query, category, sortBy });
+        const container = document.getElementById('catalog-products');
+
+        container.innerHTML = filtered.map(p => `
+          <div class="product-card">
+            <div class="product-image-container">
+              <img src="${p.image}" class="product-image" alt="${p.name}">
+            </div>
+            <div class="product-info">
+              <span class="product-category">${p.category}</span>
+              <h3 class="product-title">${p.name}</h3>
+              <div class="product-price">${ProductsManager.formatMoney(p.price)}</div>
+              <div class="product-actions">
+                <a href="produto.html?id=${p.id}" class="btn-secondary" style="font-size:0.7rem; padding:0.6rem;">Ver</a>
+                <button onclick="WhatsAppModule.buySingleProduct(ProductsManager.getById('${p.id}'))" class="btn-primary" style="font-size:0.7rem; padding:0.6rem;">Comprar</button>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      };
+
+      document.getElementById('search-input').addEventListener('input', render);
+      document.getElementById('category-filter').addEventListener('change', render);
+      document.getElementById('sort-filter').addEventListener('change', render);
+      render();
+    });
+  </script>
+</body>
+</html>

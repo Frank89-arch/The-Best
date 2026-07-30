@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Produto | The Best</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    .product-detail-container {
+      max-width: var(--max-width);
+      margin: 8rem auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+    .product-gallery img { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
+    .option-select { margin: 1.5rem 0; }
+    .option-select label { display: block; color: var(--color-gold); margin-bottom: 0.5rem; }
+    .size-btn { background: var(--color-dark-gray); color: #fff; padding: 0.5rem 1rem; border: 1px solid #444; margin-right: 0.5rem; cursor: pointer; }
+    .size-btn.active { border-color: var(--color-gold); color: var(--color-gold); }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo-text">The <span>Best</span></a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="produtos.html" class="nav-link">Colecção</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="product-detail-container" id="product-detail">
+    <!-- Preenchido via JS -->
+  </div>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      await ProductsManager.init();
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get('id') || 'TB-001';
+      const product = ProductsManager.getById(id);
+
+      if (!product) return;
+
+      let selectedSize = product.sizes[0];
+
+      document.getElementById('product-detail').innerHTML = `
+        <div class="product-gallery">
+          <img src="${product.image}" alt="${product.name}">
+        </div>
+        <div>
+          <span style="color:#888;">CÓD: ${product.id}</span>
+          <h1 style="font-family: var(--font-heading); font-size:2.5rem; margin:0.5rem 0;">${product.name}</h1>
+          <h2 style="color:var(--color-gold); font-size:1.8rem;">${ProductsManager.formatMoney(product.price)}</h2>
+          <p style="margin: 1.5rem 0; color:#ccc;">${product.description}</p>
+          <p><strong>Material:</strong> ${product.material}</p>
+          
+          <div class="option-select">
+            <label>Tamanho</label>
+            ${product.sizes.map((s, i) => `<button class="size-btn ${i===0?'active':''}" onclick="selectedSize='${s}'">${s}</button>`).join('')}
+          </div>
+
+          <div style="display:flex; gap:1rem; margin-top:2rem;">
+            <button class="btn-primary" onclick="WhatsAppModule.buySingleProduct(ProductsManager.getById('${product.id}'), selectedSize)">Comprar pelo WhatsApp</button>
+            <button class="btn-secondary" onclick="Cart.addItem(ProductsManager.getById('${product.id}'), selectedSize); alert('Adicionado!');">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      `;
+    });
+  </script>
+</body>
+</html>

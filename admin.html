@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Demo | The Best</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .admin-container { max-width: 1000px; margin: 6rem auto; padding: 2rem; background: var(--color-dark-gray); }
+    .table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; }
+    .table th, .table td { padding: 1rem; border-bottom: 1px solid #333; text-align: left; }
+  </style>
+</head>
+<body>
+  <div class="admin-container">
+    <h1 style="font-family: var(--font-heading); color: var(--color-gold);">Painel Administrativo (Demo)</h1>
+    <p style="color:#888; margin-bottom:2rem;">Gestão rápida do catálogo de produtos.</p>
+
+    <button class="btn-primary" onclick="alert('Funcionalidade de Adicionar Produto aberta!')">+ Adicionar Novo Produto</button>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Nome</th>
+          <th>Categoria</th>
+          <th>Preço</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="admin-table">
+        <!-- Renderizado dinamicamente -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/products.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      await ProductsManager.init();
+      const table = document.getElementById('admin-table');
+      table.innerHTML = ProductsManager.getAll().map(p => `
+        <tr>
+          <td>${p.id}</td>
+          <td>${p.name}</td>
+          <td>${p.category}</td>
+          <td>${ProductsManager.formatMoney(p.price)}</td>
+          <td>
+            <button style="background:none; color:var(--color-gold); cursor:pointer; margin-right:8px;"><i class="fas fa-edit"></i> Editar</button>
+            <button style="background:none; color:#e74c3c; cursor:pointer;"><i class="fas fa-trash"></i> Eliminar</button>
+          </td>
+        </tr>
+      `).join('');
+    });
+  </script>
+</body>
+</html>
