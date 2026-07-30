@@ -1,0 +1,1631 @@
+[
+  {
+    "id": "TB-BL-001",
+    "name": "Blusao Too hot",
+    "category": "blusao",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/blusao/Blusao Too hot.png",
+    "gallery": [
+      "img/produtos/blusao/Blusao Too hot.png"
+    ],
+    "description": "Blusao Too hot"
+  },
+  {
+    "id": "TB-BL-002",
+    "name": "Blusao fck ex",
+    "category": "blusao",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/blusao/Blusao fck ex.png",
+    "gallery": [
+      "img/produtos/blusao/Blusao fck ex.png"
+    ],
+    "description": "Blusao fck ex"
+  },
+  {
+    "id": "TB-BL-003",
+    "name": "Blusao spider",
+    "category": "blusao",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/blusao/Blusao spider.png",
+    "gallery": [
+      "img/produtos/blusao/Blusao spider.png"
+    ],
+    "description": "Blusao spider"
+  },
+  {
+    "id": "TB-BN-001",
+    "name": "Bone  too hot",
+    "category": "bone",
+    "model": "standard",
+    "sizes": [],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/bones/Bone  too hot.png",
+    "gallery": [
+      "img/produtos/bones/Bone  too hot.png"
+    ],
+    "description": "Bone  too hot"
+  },
+  {
+    "id": "TB-BN-002",
+    "name": "Bone Love the sinner branco",
+    "category": "bone",
+    "model": "standard",
+    "sizes": [],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/bones/Bone Love the sinner branco.png",
+    "gallery": [
+      "img/produtos/bones/Bone Love the sinner branco.png"
+    ],
+    "description": "Bone Love the sinner branco"
+  },
+  {
+    "id": "TB-BN-003",
+    "name": "Bone Love the sinner preto",
+    "category": "bone",
+    "model": "standard",
+    "sizes": [],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/bones/Bone Love the sinner preto.png",
+    "gallery": [
+      "img/produtos/bones/Bone Love the sinner preto.png"
+    ],
+    "description": "Bone Love the sinner preto"
+  },
+  {
+    "id": "TB-BN-004",
+    "name": "Bone bb girl",
+    "category": "bone",
+    "model": "standard",
+    "sizes": [],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/bones/Bone bb girl.png",
+    "gallery": [
+      "img/produtos/bones/Bone bb girl.png"
+    ],
+    "description": "Bone bb girl"
+  },
+  {
+    "id": "TB-BN-005",
+    "name": "Bone nasty black",
+    "category": "bone",
+    "model": "standard",
+    "sizes": [],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/bones/Bone nasty black.png",
+    "gallery": [
+      "img/produtos/bones/Bone nasty black.png"
+    ],
+    "description": "Bone nasty black"
+  },
+  {
+    "id": "TB-BN-006",
+    "name": "Bone rare black",
+    "category": "bone",
+    "model": "standard",
+    "sizes": [],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/bones/Bone rare black.png",
+    "gallery": [
+      "img/produtos/bones/Bone rare black.png"
+    ],
+    "description": "Bone rare black"
+  },
+  {
+    "id": "TB-BN-007",
+    "name": "Bone rare white",
+    "category": "bone",
+    "model": "standard",
+    "sizes": [],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/bones/Bone rare white.png",
+    "gallery": [
+      "img/produtos/bones/Bone rare white.png"
+    ],
+    "description": "Bone rare white"
+  },
+  {
+    "id": "TB-BN-008",
+    "name": "Bone rich",
+    "category": "bone",
+    "model": "standard",
+    "sizes": [],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/bones/Bone rich.png",
+    "gallery": [
+      "img/produtos/bones/Bone rich.png"
+    ],
+    "description": "Bone rich"
+  },
+  {
+    "id": "TB-BN-009",
+    "name": "Bone since",
+    "category": "bone",
+    "model": "standard",
+    "sizes": [],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/bones/Bone since.png",
+    "gallery": [
+      "img/produtos/bones/Bone since.png"
+    ],
+    "description": "Bone since"
+  },
+  {
+    "id": "TB-BN-010",
+    "name": "Bone white",
+    "category": "bone",
+    "model": "standard",
+    "sizes": [],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/bones/Bone white.png",
+    "gallery": [
+      "img/produtos/bones/Bone white.png"
+    ],
+    "description": "Bone white"
+  },
+  {
+    "id": "TB-CL-001",
+    "name": "calcao easy white black",
+    "category": "calcao",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/calcao/calcao easy white black.jpeg",
+    "gallery": [
+      "img/produtos/calcao/calcao easy white black.jpeg"
+    ],
+    "description": "calcao easy white black"
+  },
+  {
+    "id": "TB-CL-002",
+    "name": "calcao easy white pink blue",
+    "category": "calcao",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/calcao/calcao easy white pink blue.jpeg",
+    "gallery": [
+      "img/produtos/calcao/calcao easy white pink blue.jpeg"
+    ],
+    "description": "calcao easy white pink blue"
+  },
+  {
+    "id": "TB-CL-003",
+    "name": "calcao easy white",
+    "category": "calcao",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/calcao/calcao easy white.jpeg",
+    "gallery": [
+      "img/produtos/calcao/calcao easy white.jpeg"
+    ],
+    "description": "calcao easy white"
+  },
+  {
+    "id": "TB-CL-004",
+    "name": "calcao rose black",
+    "category": "calcao",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/calcao/calcao rose black.jpeg",
+    "gallery": [
+      "img/produtos/calcao/calcao rose black.jpeg"
+    ],
+    "description": "calcao rose black"
+  },
+  {
+    "id": "TB-CL-005",
+    "name": "calcao spider white",
+    "category": "calcao",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/calcao/calcao spider white.jpeg",
+    "gallery": [
+      "img/produtos/calcao/calcao spider white.jpeg"
+    ],
+    "description": "calcao spider white"
+  },
+  {
+    "id": "TB-CR-001",
+    "name": "Cropped diamond black",
+    "category": "tshirt",
+    "model": "cropped",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/croppeds/Cropped diamond black.jpeg",
+    "gallery": [
+      "img/produtos/croppeds/Cropped diamond black.jpeg"
+    ],
+    "description": "Cropped diamond black"
+  },
+  {
+    "id": "TB-CR-002",
+    "name": "Cropped diamond white",
+    "category": "tshirt",
+    "model": "cropped",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/croppeds/Cropped diamond white.jpeg",
+    "gallery": [
+      "img/produtos/croppeds/Cropped diamond white.jpeg"
+    ],
+    "description": "Cropped diamond white"
+  },
+  {
+    "id": "TB-CR-003",
+    "name": "Cropped lips white",
+    "category": "tshirt",
+    "model": "cropped",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/croppeds/Cropped lips white.jpeg",
+    "gallery": [
+      "img/produtos/croppeds/Cropped lips white.jpeg"
+    ],
+    "description": "Cropped lips white"
+  },
+  {
+    "id": "TB-CR-004",
+    "name": "Cropped sukuna black",
+    "category": "tshirt",
+    "model": "cropped",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/croppeds/Cropped sukuna black.jpeg",
+    "gallery": [
+      "img/produtos/croppeds/Cropped sukuna black.jpeg"
+    ],
+    "description": "Cropped sukuna black"
+  },
+  {
+    "id": "TB-EB-001",
+    "name": "Eco bag bb girl",
+    "category": "ecobag",
+    "model": "standard",
+    "sizes": [],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/ecobag/Eco bag bb girl.png",
+    "gallery": [
+      "img/produtos/ecobag/Eco bag bb girl.png"
+    ],
+    "description": "Eco bag bb girl"
+  },
+  {
+    "id": "TB-EB-002",
+    "name": "Eco bag rich black",
+    "category": "ecobag",
+    "model": "standard",
+    "sizes": [],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/ecobag/Eco bag rich black.png",
+    "gallery": [
+      "img/produtos/ecobag/Eco bag rich black.png"
+    ],
+    "description": "Eco bag rich black"
+  },
+  {
+    "id": "TB-EB-003",
+    "name": "Eco bag rich white",
+    "category": "ecobag",
+    "model": "standard",
+    "sizes": [],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/ecobag/Eco bag rich white.png",
+    "gallery": [
+      "img/produtos/ecobag/Eco bag rich white.png"
+    ],
+    "description": "Eco bag rich white"
+  },
+  {
+    "id": "TB-FS-001",
+    "name": "The best white",
+    "category": "formalshirt",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/formalshirt/The best white.jpeg",
+    "gallery": [
+      "img/produtos/formalshirt/The best white.jpeg"
+    ],
+    "description": "The best white"
+  },
+  {
+    "id": "TB-FS-002",
+    "name": "the best black",
+    "category": "formalshirt",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/formalshirt/the best black.jpeg",
+    "gallery": [
+      "img/produtos/formalshirt/the best black.jpeg"
+    ],
+    "description": "the best black"
+  },
+  {
+    "id": "TB-HD-001",
+    "name": "Hoddie Jesus black",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie Jesus black.jpeg",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie Jesus black.jpeg"
+    ],
+    "description": "Hoddie Jesus black"
+  },
+  {
+    "id": "TB-HD-002",
+    "name": "Hoddie break",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie break.png",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie break.png"
+    ],
+    "description": "Hoddie break"
+  },
+  {
+    "id": "TB-HD-003",
+    "name": "Hoddie butterfly white",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie butterfly white.jpeg",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie butterfly white.jpeg"
+    ],
+    "description": "Hoddie butterfly white"
+  },
+  {
+    "id": "TB-HD-004",
+    "name": "Hoddie easy black",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie easy black.png",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie easy black.png"
+    ],
+    "description": "Hoddie easy black"
+  },
+  {
+    "id": "TB-HD-005",
+    "name": "Hoddie easy pink blue white",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie easy pink blue white.jpeg",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie easy pink blue white.jpeg"
+    ],
+    "description": "Hoddie easy pink blue white"
+  },
+  {
+    "id": "TB-HD-006",
+    "name": "Hoddie easy white",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie easy white.png",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie easy white.png"
+    ],
+    "description": "Hoddie easy white"
+  },
+  {
+    "id": "TB-HD-007",
+    "name": "Hoddie fuck my ex white",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie fuck my ex white.jpeg",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie fuck my ex white.jpeg"
+    ],
+    "description": "Hoddie fuck my ex white"
+  },
+  {
+    "id": "TB-HD-008",
+    "name": "Hoddie monarca white",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie monarca white.jpeg",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie monarca white.jpeg"
+    ],
+    "description": "Hoddie monarca white"
+  },
+  {
+    "id": "TB-HD-009",
+    "name": "Hoddie nasty black",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie nasty black.png",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie nasty black.png"
+    ],
+    "description": "Hoddie nasty black"
+  },
+  {
+    "id": "TB-HD-010",
+    "name": "Hoddie nasty white",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie nasty white.png",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie nasty white.png"
+    ],
+    "description": "Hoddie nasty white"
+  },
+  {
+    "id": "TB-HD-011",
+    "name": "Hoddie no girls white",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie no girls white.jpeg",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie no girls white.jpeg"
+    ],
+    "description": "Hoddie no girls white"
+  },
+  {
+    "id": "TB-HD-012",
+    "name": "Hoddie prety",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie prety.png",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie prety.png"
+    ],
+    "description": "Hoddie prety"
+  },
+  {
+    "id": "TB-HD-013",
+    "name": "Hoddie ruined black",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie ruined black.jpeg",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie ruined black.jpeg"
+    ],
+    "description": "Hoddie ruined black"
+  },
+  {
+    "id": "TB-HD-014",
+    "name": "Hoddie rules white",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie rules white.jpeg",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie rules white.jpeg"
+    ],
+    "description": "Hoddie rules white"
+  },
+  {
+    "id": "TB-HD-015",
+    "name": "Hoddie spider black white",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie spider black white.jpeg",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie spider black white.jpeg"
+    ],
+    "description": "Hoddie spider black white"
+  },
+  {
+    "id": "TB-HD-016",
+    "name": "Hoddie spider girl black",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie spider girl black.png",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie spider girl black.png"
+    ],
+    "description": "Hoddie spider girl black"
+  },
+  {
+    "id": "TB-HD-017",
+    "name": "Hoddie spider girl white",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie spider girl white.png",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie spider girl white.png"
+    ],
+    "description": "Hoddie spider girl white"
+  },
+  {
+    "id": "TB-HD-018",
+    "name": "Hoddie spider man",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie spider man.png",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie spider man.png"
+    ],
+    "description": "Hoddie spider man"
+  },
+  {
+    "id": "TB-HD-019",
+    "name": "Hoddie spider white pink",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie spider white pink.jpeg",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie spider white pink.jpeg"
+    ],
+    "description": "Hoddie spider white pink"
+  },
+  {
+    "id": "TB-HD-020",
+    "name": "Hoddie tanjiro white",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie tanjiro white.jpeg",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie tanjiro white.jpeg"
+    ],
+    "description": "Hoddie tanjiro white"
+  },
+  {
+    "id": "TB-HD-021",
+    "name": "Hoddie unstapuble black",
+    "category": "hoodie",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/hoodies/Hoddie unstapuble black.png",
+    "gallery": [
+      "img/produtos/hoodies/Hoddie unstapuble black.png"
+    ],
+    "description": "Hoddie unstapuble black"
+  },
+  {
+    "id": "TB-PL-001",
+    "name": "Polo blessed w e b (2)",
+    "category": "polo",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/polos/Polo blessed w e b (2).png",
+    "gallery": [
+      "img/produtos/polos/Polo blessed w e b (2).png"
+    ],
+    "description": "Polo blessed w e b (2)"
+  },
+  {
+    "id": "TB-PL-002",
+    "name": "Polo blessed w e b",
+    "category": "polo",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/polos/Polo blessed w e b.png",
+    "gallery": [
+      "img/produtos/polos/Polo blessed w e b.png"
+    ],
+    "description": "Polo blessed w e b"
+  },
+  {
+    "id": "TB-PL-003",
+    "name": "Polo cardsw e b",
+    "category": "polo",
+    "model": "standard",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/polos/Polo cardsw e b.png",
+    "gallery": [
+      "img/produtos/polos/Polo cardsw e b.png"
+    ],
+    "description": "Polo cardsw e b"
+  },
+  {
+    "id": "TB-TS-001",
+    "name": "tshirt break black",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt break black.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt break black.png"
+    ],
+    "description": "tshirt break black"
+  },
+  {
+    "id": "TB-TS-002",
+    "name": "tshirt break white",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt break white.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt break white.png"
+    ],
+    "description": "tshirt break white"
+  },
+  {
+    "id": "TB-TS-003",
+    "name": "tshirt easy b e w",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt easy b e w.jpeg",
+    "gallery": [
+      "img/produtos/tshirts/tshirt easy b e w.jpeg"
+    ],
+    "description": "tshirt easy b e w"
+  },
+  {
+    "id": "TB-TS-004",
+    "name": "tshirt easy white pink",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt easy white pink.jpeg",
+    "gallery": [
+      "img/produtos/tshirts/tshirt easy white pink.jpeg"
+    ],
+    "description": "tshirt easy white pink"
+  },
+  {
+    "id": "TB-TS-005",
+    "name": "tshirt naste black pink",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt naste black pink.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt naste black pink.png"
+    ],
+    "description": "tshirt naste black pink"
+  },
+  {
+    "id": "TB-TS-006",
+    "name": "tshirt nasty black 2",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt nasty black 2.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt nasty black 2.png"
+    ],
+    "description": "tshirt nasty black 2"
+  },
+  {
+    "id": "TB-TS-007",
+    "name": "tshirt nasty white 1",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt nasty white 1.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt nasty white 1.png"
+    ],
+    "description": "tshirt nasty white 1"
+  },
+  {
+    "id": "TB-TS-008",
+    "name": "tshirt nasty white pink",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt nasty white pink.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt nasty white pink.png"
+    ],
+    "description": "tshirt nasty white pink"
+  },
+  {
+    "id": "TB-TS-009",
+    "name": "tshirt no money white",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt no money white.jpeg",
+    "gallery": [
+      "img/produtos/tshirts/tshirt no money white.jpeg"
+    ],
+    "description": "tshirt no money white"
+  },
+  {
+    "id": "TB-TS-010",
+    "name": "tshirt pretty black",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt pretty black.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt pretty black.png"
+    ],
+    "description": "tshirt pretty black"
+  },
+  {
+    "id": "TB-TS-011",
+    "name": "tshirt pretty white",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt pretty white.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt pretty white.png"
+    ],
+    "description": "tshirt pretty white"
+  },
+  {
+    "id": "TB-TS-012",
+    "name": "tshirt rare black",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt rare black.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt rare black.png"
+    ],
+    "description": "tshirt rare black"
+  },
+  {
+    "id": "TB-TS-013",
+    "name": "tshirt rare white",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt rare white.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt rare white.png"
+    ],
+    "description": "tshirt rare white"
+  },
+  {
+    "id": "TB-TS-014",
+    "name": "tshirt rich black",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt rich black.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt rich black.png"
+    ],
+    "description": "tshirt rich black"
+  },
+  {
+    "id": "TB-TS-015",
+    "name": "tshirt rich white",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt rich white.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt rich white.png"
+    ],
+    "description": "tshirt rich white"
+  },
+  {
+    "id": "TB-TS-016",
+    "name": "tshirt since black",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt since black.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt since black.png"
+    ],
+    "description": "tshirt since black"
+  },
+  {
+    "id": "TB-TS-017",
+    "name": "tshirt since white",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt since white.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt since white.png"
+    ],
+    "description": "tshirt since white"
+  },
+  {
+    "id": "TB-TS-018",
+    "name": "tshirt spider black",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt spider black.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt spider black.png"
+    ],
+    "description": "tshirt spider black"
+  },
+  {
+    "id": "TB-TS-019",
+    "name": "tshirt spider girl black",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt spider girl black.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt spider girl black.png"
+    ],
+    "description": "tshirt spider girl black"
+  },
+  {
+    "id": "TB-TS-020",
+    "name": "tshirt spider girl white",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt spider girl white.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt spider girl white.png"
+    ],
+    "description": "tshirt spider girl white"
+  },
+  {
+    "id": "TB-TS-021",
+    "name": "tshirt sza white",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt sza white.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt sza white.png"
+    ],
+    "description": "tshirt sza white"
+  },
+  {
+    "id": "TB-TS-022",
+    "name": "tshirt too hot black",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt too hot black.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt too hot black.png"
+    ],
+    "description": "tshirt too hot black"
+  },
+  {
+    "id": "TB-TS-023",
+    "name": "tshirt too hot white",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt too hot white.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt too hot white.png"
+    ],
+    "description": "tshirt too hot white"
+  },
+  {
+    "id": "TB-TS-024",
+    "name": "tshirt too hot",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt too hot.png",
+    "gallery": [
+      "img/produtos/tshirts/tshirt too hot.png"
+    ],
+    "description": "tshirt too hot"
+  },
+  {
+    "id": "TB-TS-025",
+    "name": "tshirt trust",
+    "category": "tshirt",
+    "model": "oversized",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/tshirts/tshirt trust.jpeg",
+    "gallery": [
+      "img/produtos/tshirts/tshirt trust.jpeg"
+    ],
+    "description": "tshirt trust"
+  },
+  {
+    "id": "TB-WL-001",
+    "name": "wide leg blessed",
+    "category": "calca",
+    "model": "wideleg",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": "Premium",
+    "collection": "The Best Collection",
+    "stock": 20,
+    "isNew": true,
+    "isSale": false,
+    "image": "img/produtos/wideleg/wide leg blessed.png",
+    "gallery": [
+      "img/produtos/wideleg/wide leg blessed.png"
+    ],
+    "description": "wide leg blessed"
+  }
+]
