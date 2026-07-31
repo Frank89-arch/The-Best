@@ -490,6 +490,55 @@ button, input, select, textarea {
   font-size: 0.85rem;
 }
 .logo img{
-    width:70px;
+    width:90px;
     height:auto;
+}
+/* ===========================
+   CARTÕES DOS PRODUTOS
+=========================== */
+
+.product-card{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+}
+
+.product-info{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.product-actions{
+    margin-top:auto;
+}
+/* ===========================
+   ANIMAÇÃO DOS PRODUTOS
+=========================== */
+
+.product-image{
+    transition:transform .4s ease;
+}
+
+.product-card:hover .product-image{
+    transform:scale(1.05);
+}
+/* ===========================
+   BOTÕES
+=========================== */
+
+.btn-primary{
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    transition:.3s;
+}
+
+.btn-secondary:hover{
+    transform:translateY(-3px);
 }
