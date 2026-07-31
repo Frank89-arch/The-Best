@@ -542,3 +542,108 @@ button, input, select, textarea {
 .btn-secondary:hover{
     transform:translateY(-3px);
 }
+/* ===================================
+   MODAL DO PRODUTO
+=================================== */
+
+.product-modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    z-index:9999;
+    justify-content:center;
+    align-items:center;
+}
+
+.product-modal.active{
+    display:flex;
+}
+
+.product-modal-content{
+    width:420px;
+    max-width:95%;
+    background:#161616;
+    border:1px solid rgba(212,175,55,.25);
+    border-radius:12px;
+    padding:25px;
+    color:#fff;
+    text-align:center;
+    position:relative;
+}
+
+.product-modal-content img{
+    width:220px;
+    max-width:100%;
+    margin:auto;
+    display:block;
+    border-radius:10px;
+}
+
+.product-modal-content h2{
+    margin:18px 0 10px;
+    font-family:var(--font-heading);
+}
+
+.product-modal-content p{
+    color:var(--color-gold);
+    font-size:1.2rem;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.product-modal-content label{
+    display:block;
+    text-align:left;
+    margin:15px 0 8px;
+    font-weight:600;
+}
+
+.product-modal-content select{
+    width:100%;
+    padding:10px;
+    background:#0f0f0f;
+    color:#fff;
+    border:1px solid #333;
+    border-radius:6px;
+}
+
+.qty-selector{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin:20px 0;
+}
+
+.qty-selector button{
+    width:40px;
+    height:40px;
+    border:none;
+    background:var(--color-gold);
+    color:#000;
+    font-size:22px;
+    cursor:pointer;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.qty-selector span{
+    font-size:20px;
+    font-weight:bold;
+    min-width:40px;
+    text-align:center;
+}
+
+.close-modal{
+    position:absolute;
+    right:15px;
+    top:10px;
+    font-size:30px;
+    cursor:pointer;
+    color:#fff;
+}
+
+.close-modal:hover{
+    color:var(--color-gold);
+}
