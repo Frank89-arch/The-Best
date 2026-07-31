@@ -97,13 +97,16 @@
     </div>
   </aside>
 
-  <script src="js/products.js"></script>
-  <script src="js/search.js"></script>
-  <script src="js/cart.js"></script>
-  <script src="js/whatsapp.js"></script>
-  <script src="js/main.js"></script>
+<script src="js/prices.js"></script>
+<script src="js/products.js"></script>
+<script src="js/search.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/whatsapp.js"></script>
+<script src="js/main.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', async () => {
+
+    await ProductsManager.init();
       const render = () => {
         const query = document.getElementById('search-input').value;
         const category = document.getElementById('category-filter').value;
@@ -120,7 +123,9 @@
             <div class="product-info">
               <span class="product-category">${p.category}</span>
               <h3 class="product-title">${p.name}</h3>
-              <div class="product-price">${ProductsManager.formatMoney(p.price)}</div>
+              <div class="product-price">
+    ${ProductsManager.formatMoney(ProductsManager.getPrice(p))}
+</div>
               <div class="product-actions">
                 <a href="produto.html?id=${p.id}" class="btn-secondary" style="font-size:0.7rem; padding:0.6rem;">Ver</a>
                 <button onclick="WhatsAppModule.buySingleProduct(ProductsManager.getById('${p.id}'))" class="btn-primary" style="font-size:0.7rem; padding:0.6rem;">Comprar</button>
