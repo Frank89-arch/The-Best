@@ -160,7 +160,13 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="product-actions">
               <a href="produto.html?id=${p.id}" class="btn-secondary" style="font-size:0.7rem; padding:0.6rem;">Detalhes</a>
-              <button onclick="WhatsAppModule.buySingleProduct(ProductsManager.getById('${p.id}'))" class="btn-primary" style="font-size:0.7rem; padding:0.6rem;">Comprar</button>
+              <button
+onclick="openProductModal(ProductsManager.getById('${p.id}'))"
+class="btn-primary">
+
+Comprar
+
+</button>
             </div>
           </div>
         </div>
@@ -168,4 +174,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   </script>
 </body>
+<!-- Modal do Produto -->
+<div id="product-modal" class="product-modal">
+
+    <div class="product-modal-content">
+
+        <span id="close-product-modal" class="close-modal">&times;</span>
+
+        <img id="modal-image" src="" alt="Produto">
+
+        <h2 id="modal-name"></h2>
+
+        <p id="modal-price"></p>
+
+        <label>Tamanho</label>
+
+        <select id="modal-size"></select>
+
+        <label>Quantidade</label>
+
+        <div class="qty-selector">
+
+            <button id="qty-minus">−</button>
+
+            <span id="qty-value">1</span>
+
+            <button id="qty-plus">+</button>
+
+        </div>
+
+        <button id="add-cart-modal" class="btn-primary">
+            Adicionar ao Carrinho
+        </button>
+
+    </div>
+
+</div>
 </html>
