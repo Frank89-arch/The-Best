@@ -124,6 +124,19 @@
 <script src="js/cart.js"></script>
 <script src="js/whatsapp.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('featured-products');
+    const items = ProductsManager.getAll().slice(0, 4);
+
+    container.innerHTML = items.map(p => `
+        <div class="product-card">
+            ...
+        </div>
+    `).join('');
+});
+</script>
     document.addEventListener('DOMContentLoaded', () => {
       const container = document.getElementById('featured-products');
       const items = ProductsManager.getAll().slice(0, 4);
