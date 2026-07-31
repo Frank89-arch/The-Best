@@ -15,9 +15,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/blusao/Blusao Too hot.png",
+    "image": "img/Produtos/blusao/Blusao Too hot.png",
     "gallery": [
-      "img/produtos/blusao/Blusao Too hot.png"
+      "img/Produtos/blusao/Blusao Too hot.png"
     ],
     "description": "Blusao Too hot"
   },
@@ -37,9 +37,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/blusao/Blusao fck ex.png",
+    "image": "img/Produtos/blusao/Blusao fck ex.png",
     "gallery": [
-      "img/produtos/blusao/Blusao fck ex.png"
+      "img/Produtos/blusao/Blusao fck ex.png"
     ],
     "description": "Blusao fck ex"
   },
@@ -59,9 +59,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/blusao/Blusao spider.png",
+    "image": "img/Produtos/blusao/Blusao spider.png",
     "gallery": [
-      "img/produtos/blusao/Blusao spider.png"
+      "img/Produtos/blusao/Blusao spider.png"
     ],
     "description": "Blusao spider"
   },
@@ -76,9 +76,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/bones/Bone  too hot.png",
+    "image": "img/Produtos/bones/Bone  too hot.png",
     "gallery": [
-      "img/produtos/bones/Bone  too hot.png"
+      "img/Produtos/bones/Bone  too hot.png"
     ],
     "description": "Bone  too hot"
   },
@@ -93,9 +93,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/bones/Bone Love the sinner branco.png",
+    "image": "img/Produtos/bones/Bone Love the sinner branco.png",
     "gallery": [
-      "img/produtos/bones/Bone Love the sinner branco.png"
+      "img/Produtos/bones/Bone Love the sinner branco.png"
     ],
     "description": "Bone Love the sinner branco"
   },
@@ -110,9 +110,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/bones/Bone Love the sinner preto.png",
+    "image": "img/Produtos/bones/Bone Love the sinner preto.png",
     "gallery": [
-      "img/produtos/bones/Bone Love the sinner preto.png"
+      "img/Produtos/bones/Bone Love the sinner preto.png"
     ],
     "description": "Bone Love the sinner preto"
   },
@@ -127,9 +127,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/bones/Bone bb girl.png",
+    "image": "img/Produtos/bones/Bone bb girl.png",
     "gallery": [
-      "img/produtos/bones/Bone bb girl.png"
+      "img/Produtos/bones/Bone bb girl.png"
     ],
     "description": "Bone bb girl"
   },
@@ -144,9 +144,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/bones/Bone nasty black.png",
+    "image": "img/Produtos/bones/Bone nasty black.png",
     "gallery": [
-      "img/produtos/bones/Bone nasty black.png"
+      "img/Produtos/bones/Bone nasty black.png"
     ],
     "description": "Bone nasty black"
   },
@@ -161,9 +161,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/bones/Bone rare black.png",
+    "image": "img/Produtos/bones/Bone rare black.png",
     "gallery": [
-      "img/produtos/bones/Bone rare black.png"
+      "img/Produtos/bones/Bone rare black.png"
     ],
     "description": "Bone rare black"
   },
@@ -178,9 +178,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/bones/Bone rare white.png",
+    "image": "img/Produtos/bones/Bone rare white.png",
     "gallery": [
-      "img/produtos/bones/Bone rare white.png"
+      "img/Produtos/bones/Bone rare white.png"
     ],
     "description": "Bone rare white"
   },
@@ -195,9 +195,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/bones/Bone rich.png",
+    "image": "img/Produtos/bones/Bone rich.png",
     "gallery": [
-      "img/produtos/bones/Bone rich.png"
+      "img/Produtos/bones/Bone rich.png"
     ],
     "description": "Bone rich"
   },
@@ -212,9 +212,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/bones/Bone since.png",
+    "image": "img/Produtos/bones/Bone since.png",
     "gallery": [
-      "img/produtos/bones/Bone since.png"
+      "img/Produtos/bones/Bone since.png"
     ],
     "description": "Bone since"
   },
@@ -229,9 +229,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/bones/Bone white.png",
+    "image": "img/Produtos/bones/Bone white.png",
     "gallery": [
-      "img/produtos/bones/Bone white.png"
+      "img/Produtos/bones/Bone white.png"
     ],
     "description": "Bone white"
   },
@@ -251,9 +251,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/calcao/calcao easy white black.jpeg",
+    "image": "img/Produtos/calcao/calcao easy white black.jpeg",
     "gallery": [
-      "img/produtos/calcao/calcao easy white black.jpeg"
+      "img/Produtos/calcao/calcao easy white black.jpeg"
     ],
     "description": "calcao easy white black"
   },
@@ -273,9 +273,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/calcao/calcao easy white pink blue.jpeg",
+    "image": "img/Produtos/calcao/calcao easy white pink blue.jpeg",
     "gallery": [
-      "img/produtos/calcao/calcao easy white pink blue.jpeg"
+      "img/Produtos/calcao/calcao easy white pink blue.jpeg"
     ],
     "description": "calcao easy white pink blue"
   },
@@ -295,9 +295,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/calcao/calcao easy white.jpeg",
+    "image": "img/Produtos/calcao/calcao easy white.jpeg",
     "gallery": [
-      "img/produtos/calcao/calcao easy white.jpeg"
+      "img/Produtos/calcao/calcao easy white.jpeg"
     ],
     "description": "calcao easy white"
   },
@@ -317,9 +317,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/calcao/calcao rose black.jpeg",
+    "image": "img/Produtos/calcao/calcao rose black.jpeg",
     "gallery": [
-      "img/produtos/calcao/calcao rose black.jpeg"
+      "img/Produtos/calcao/calcao rose black.jpeg"
     ],
     "description": "calcao rose black"
   },
@@ -339,9 +339,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/calcao/calcao spider white.jpeg",
+    "image": "img/Produtos/calcao/calcao spider white.jpeg",
     "gallery": [
-      "img/produtos/calcao/calcao spider white.jpeg"
+      "img/Produtos/calcao/calcao spider white.jpeg"
     ],
     "description": "calcao spider white"
   },
@@ -361,9 +361,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/croppeds/Cropped diamond black.jpeg",
+    "image": "img/Produtos/croppeds/Cropped diamond black.jpeg",
     "gallery": [
-      "img/produtos/croppeds/Cropped diamond black.jpeg"
+      "img/Produtos/croppeds/Cropped diamond black.jpeg"
     ],
     "description": "Cropped diamond black"
   },
@@ -383,9 +383,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/croppeds/Cropped diamond white.jpeg",
+    "image": "img/Produtos/croppeds/Cropped diamond white.jpeg",
     "gallery": [
-      "img/produtos/croppeds/Cropped diamond white.jpeg"
+      "img/Produtos/croppeds/Cropped diamond white.jpeg"
     ],
     "description": "Cropped diamond white"
   },
@@ -405,9 +405,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/croppeds/Cropped lips white.jpeg",
+    "image": "img/Produtos/croppeds/Cropped lips white.jpeg",
     "gallery": [
-      "img/produtos/croppeds/Cropped lips white.jpeg"
+      "img/Produtos/croppeds/Cropped lips white.jpeg"
     ],
     "description": "Cropped lips white"
   },
@@ -427,9 +427,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/croppeds/Cropped sukuna black.jpeg",
+    "image": "img/Produtos/croppeds/Cropped sukuna black.jpeg",
     "gallery": [
-      "img/produtos/croppeds/Cropped sukuna black.jpeg"
+      "img/Produtos/croppeds/Cropped sukuna black.jpeg"
     ],
     "description": "Cropped sukuna black"
   },
@@ -444,9 +444,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/ecobag/Eco bag bb girl.png",
+    "image": "img/Produtos/ecobag/Eco bag bb girl.png",
     "gallery": [
-      "img/produtos/ecobag/Eco bag bb girl.png"
+      "img/Produtos/ecobag/Eco bag bb girl.png"
     ],
     "description": "Eco bag bb girl"
   },
@@ -461,9 +461,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/ecobag/Eco bag rich black.png",
+    "image": "img/Produtos/ecobag/Eco bag rich black.png",
     "gallery": [
-      "img/produtos/ecobag/Eco bag rich black.png"
+      "img/Produtos/ecobag/Eco bag rich black.png"
     ],
     "description": "Eco bag rich black"
   },
@@ -478,9 +478,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/ecobag/Eco bag rich white.png",
+    "image": "img/Produtos/ecobag/Eco bag rich white.png",
     "gallery": [
-      "img/produtos/ecobag/Eco bag rich white.png"
+      "img/Produtos/ecobag/Eco bag rich white.png"
     ],
     "description": "Eco bag rich white"
   },
@@ -500,9 +500,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/formalshirt/The best white.jpeg",
+    "image": "img/Produtos/formalshirt/The best white.jpeg",
     "gallery": [
-      "img/produtos/formalshirt/The best white.jpeg"
+      "img/Produtos/formalshirt/The best white.jpeg"
     ],
     "description": "The best white"
   },
@@ -522,9 +522,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/formalshirt/the best black.jpeg",
+    "image": "img/Produtos/formalshirt/the best black.jpeg",
     "gallery": [
-      "img/produtos/formalshirt/the best black.jpeg"
+      "img/Produtos/formalshirt/the best black.jpeg"
     ],
     "description": "the best black"
   },
@@ -544,9 +544,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie Jesus black.jpeg",
+    "image": "img/Produtos/hoodies/Hoddie Jesus black.jpeg",
     "gallery": [
-      "img/produtos/hoodies/Hoddie Jesus black.jpeg"
+      "img/Produtos/hoodies/Hoddie Jesus black.jpeg"
     ],
     "description": "Hoddie Jesus black"
   },
@@ -566,9 +566,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie break.png",
+    "image": "img/Produtos/hoodies/Hoddie break.png",
     "gallery": [
-      "img/produtos/hoodies/Hoddie break.png"
+      "img/Produtos/hoodies/Hoddie break.png"
     ],
     "description": "Hoddie break"
   },
@@ -588,9 +588,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie butterfly white.jpeg",
+    "image": "img/Produtos/hoodies/Hoddie butterfly white.jpeg",
     "gallery": [
-      "img/produtos/hoodies/Hoddie butterfly white.jpeg"
+      "img/Produtos/hoodies/Hoddie butterfly white.jpeg"
     ],
     "description": "Hoddie butterfly white"
   },
@@ -610,9 +610,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie easy black.png",
+    "image": "img/Produtos/hoodies/Hoddie easy black.png",
     "gallery": [
-      "img/produtos/hoodies/Hoddie easy black.png"
+      "img/Produtos/hoodies/Hoddie easy black.png"
     ],
     "description": "Hoddie easy black"
   },
@@ -632,9 +632,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie easy pink blue white.jpeg",
+    "image": "img/Produtos/hoodies/Hoddie easy pink blue white.jpeg",
     "gallery": [
-      "img/produtos/hoodies/Hoddie easy pink blue white.jpeg"
+      "img/Produtos/hoodies/Hoddie easy pink blue white.jpeg"
     ],
     "description": "Hoddie easy pink blue white"
   },
@@ -654,9 +654,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie easy white.png",
+    "image": "img/Produtos/hoodies/Hoddie easy white.png",
     "gallery": [
-      "img/produtos/hoodies/Hoddie easy white.png"
+      "img/Produtos/hoodies/Hoddie easy white.png"
     ],
     "description": "Hoddie easy white"
   },
@@ -676,9 +676,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie fuck my ex white.jpeg",
+    "image": "img/Produtos/hoodies/Hoddie fuck my ex white.jpeg",
     "gallery": [
-      "img/produtos/hoodies/Hoddie fuck my ex white.jpeg"
+      "img/Produtos/hoodies/Hoddie fuck my ex white.jpeg"
     ],
     "description": "Hoddie fuck my ex white"
   },
@@ -698,9 +698,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie monarca white.jpeg",
+    "image": "img/Produtos/hoodies/Hoddie monarca white.jpeg",
     "gallery": [
-      "img/produtos/hoodies/Hoddie monarca white.jpeg"
+      "img/Produtos/hoodies/Hoddie monarca white.jpeg"
     ],
     "description": "Hoddie monarca white"
   },
@@ -720,9 +720,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie nasty black.png",
+    "image": "img/Produtos/hoodies/Hoddie nasty black.png",
     "gallery": [
-      "img/produtos/hoodies/Hoddie nasty black.png"
+      "img/Produtos/hoodies/Hoddie nasty black.png"
     ],
     "description": "Hoddie nasty black"
   },
@@ -742,9 +742,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie nasty white.png",
+    "image": "img/Produtos/hoodies/Hoddie nasty white.png",
     "gallery": [
-      "img/produtos/hoodies/Hoddie nasty white.png"
+      "img/Produtos/hoodies/Hoddie nasty white.png"
     ],
     "description": "Hoddie nasty white"
   },
@@ -764,9 +764,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie no girls white.jpeg",
+    "image": "img/Produtos/hoodies/Hoddie no girls white.jpeg",
     "gallery": [
-      "img/produtos/hoodies/Hoddie no girls white.jpeg"
+      "img/Produtos/hoodies/Hoddie no girls white.jpeg"
     ],
     "description": "Hoddie no girls white"
   },
@@ -786,9 +786,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie prety.png",
+    "image": "img/Produtos/hoodies/Hoddie prety.png",
     "gallery": [
-      "img/produtos/hoodies/Hoddie prety.png"
+      "img/Produtos/hoodies/Hoddie prety.png"
     ],
     "description": "Hoddie prety"
   },
@@ -808,9 +808,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie ruined black.jpeg",
+    "image": "img/Produtos/hoodies/Hoddie ruined black.jpeg",
     "gallery": [
-      "img/produtos/hoodies/Hoddie ruined black.jpeg"
+      "img/Produtos/hoodies/Hoddie ruined black.jpeg"
     ],
     "description": "Hoddie ruined black"
   },
@@ -830,9 +830,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie rules white.jpeg",
+    "image": "img/Produtos/hoodies/Hoddie rules white.jpeg",
     "gallery": [
-      "img/produtos/hoodies/Hoddie rules white.jpeg"
+      "img/Produtos/hoodies/Hoddie rules white.jpeg"
     ],
     "description": "Hoddie rules white"
   },
@@ -852,9 +852,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie spider black white.jpeg",
+    "image": "img/Produtos/hoodies/Hoddie spider black white.jpeg",
     "gallery": [
-      "img/produtos/hoodies/Hoddie spider black white.jpeg"
+      "img/Produtos/hoodies/Hoddie spider black white.jpeg"
     ],
     "description": "Hoddie spider black white"
   },
@@ -874,9 +874,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie spider girl black.png",
+    "image": "img/Produtos/hoodies/Hoddie spider girl black.png",
     "gallery": [
-      "img/produtos/hoodies/Hoddie spider girl black.png"
+      "img/Produtos/hoodies/Hoddie spider girl black.png"
     ],
     "description": "Hoddie spider girl black"
   },
@@ -896,9 +896,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie spider girl white.png",
+    "image": "img/Produtos/hoodies/Hoddie spider girl white.png",
     "gallery": [
-      "img/produtos/hoodies/Hoddie spider girl white.png"
+      "img/Produtos/hoodies/Hoddie spider girl white.png"
     ],
     "description": "Hoddie spider girl white"
   },
@@ -918,9 +918,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie spider man.png",
+    "image": "img/Produtos/hoodies/Hoddie spider man.png",
     "gallery": [
-      "img/produtos/hoodies/Hoddie spider man.png"
+      "img/Produtos/hoodies/Hoddie spider man.png"
     ],
     "description": "Hoddie spider man"
   },
@@ -940,9 +940,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie spider white pink.jpeg",
+    "image": "img/Produtos/hoodies/Hoddie spider white pink.jpeg",
     "gallery": [
-      "img/produtos/hoodies/Hoddie spider white pink.jpeg"
+      "img/Produtos/hoodies/Hoddie spider white pink.jpeg"
     ],
     "description": "Hoddie spider white pink"
   },
@@ -962,9 +962,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie tanjiro white.jpeg",
+    "image": "img/Produtos/hoodies/Hoddie tanjiro white.jpeg",
     "gallery": [
-      "img/produtos/hoodies/Hoddie tanjiro white.jpeg"
+      "img/Produtos/hoodies/Hoddie tanjiro white.jpeg"
     ],
     "description": "Hoddie tanjiro white"
   },
@@ -984,9 +984,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/hoodies/Hoddie unstapuble black.png",
+    "image": "img/Produtos/hoodies/Hoddie unstapuble black.png",
     "gallery": [
-      "img/produtos/hoodies/Hoddie unstapuble black.png"
+      "img/Produtos/hoodies/Hoddie unstapuble black.png"
     ],
     "description": "Hoddie unstapuble black"
   },
@@ -1006,9 +1006,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/polos/Polo blessed w e b (2).png",
+    "image": "img/Produtos/polos/Polo blessed w e b (2).png",
     "gallery": [
-      "img/produtos/polos/Polo blessed w e b (2).png"
+      "img/Produtos/polos/Polo blessed w e b (2).png"
     ],
     "description": "Polo blessed w e b (2)"
   },
@@ -1028,9 +1028,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/polos/Polo blessed w e b.png",
+    "image": "img/Produtos/polos/Polo blessed w e b.png",
     "gallery": [
-      "img/produtos/polos/Polo blessed w e b.png"
+      "img/Produtos/polos/Polo blessed w e b.png"
     ],
     "description": "Polo blessed w e b"
   },
@@ -1050,9 +1050,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/polos/Polo cardsw e b.png",
+    "image": "img/Produtos/polos/Polo cardsw e b.png",
     "gallery": [
-      "img/produtos/polos/Polo cardsw e b.png"
+      "img/Produtos/polos/Polo cardsw e b.png"
     ],
     "description": "Polo cardsw e b"
   },
@@ -1072,9 +1072,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt break black.png",
+    "image": "img/Produtos/tshirts/tshirt break black.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt break black.png"
+      "img/Produtos/tshirts/tshirt break black.png"
     ],
     "description": "tshirt break black"
   },
@@ -1094,9 +1094,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt break white.png",
+    "image": "img/Produtos/tshirts/tshirt break white.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt break white.png"
+      "img/Produtos/tshirts/tshirt break white.png"
     ],
     "description": "tshirt break white"
   },
@@ -1116,9 +1116,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt easy b e w.jpeg",
+    "image": "img/Produtos/tshirts/tshirt easy b e w.jpeg",
     "gallery": [
-      "img/produtos/tshirts/tshirt easy b e w.jpeg"
+      "img/Produtos/tshirts/tshirt easy b e w.jpeg"
     ],
     "description": "tshirt easy b e w"
   },
@@ -1138,9 +1138,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt easy white pink.jpeg",
+    "image": "img/Produtos/tshirts/tshirt easy white pink.jpeg",
     "gallery": [
-      "img/produtos/tshirts/tshirt easy white pink.jpeg"
+      "img/Produtos/tshirts/tshirt easy white pink.jpeg"
     ],
     "description": "tshirt easy white pink"
   },
@@ -1160,9 +1160,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt naste black pink.png",
+    "image": "img/Produtos/tshirts/tshirt naste black pink.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt naste black pink.png"
+      "img/Produtos/tshirts/tshirt naste black pink.png"
     ],
     "description": "tshirt naste black pink"
   },
@@ -1182,9 +1182,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt nasty black 2.png",
+    "image": "img/Produtos/tshirts/tshirt nasty black 2.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt nasty black 2.png"
+      "img/Produtos/tshirts/tshirt nasty black 2.png"
     ],
     "description": "tshirt nasty black 2"
   },
@@ -1204,9 +1204,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt nasty white 1.png",
+    "image": "img/Produtos/tshirts/tshirt nasty white 1.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt nasty white 1.png"
+      "img/Produtos/tshirts/tshirt nasty white 1.png"
     ],
     "description": "tshirt nasty white 1"
   },
@@ -1226,9 +1226,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt nasty white pink.png",
+    "image": "img/Produtos/tshirts/tshirt nasty white pink.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt nasty white pink.png"
+      "img/Produtos/tshirts/tshirt nasty white pink.png"
     ],
     "description": "tshirt nasty white pink"
   },
@@ -1248,9 +1248,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt no money white.jpeg",
+    "image": "img/Produtos/tshirts/tshirt no money white.jpeg",
     "gallery": [
-      "img/produtos/tshirts/tshirt no money white.jpeg"
+      "img/Produtos/tshirts/tshirt no money white.jpeg"
     ],
     "description": "tshirt no money white"
   },
@@ -1270,9 +1270,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt pretty black.png",
+    "image": "img/Produtos/tshirts/tshirt pretty black.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt pretty black.png"
+      "img/Produtos/tshirts/tshirt pretty black.png"
     ],
     "description": "tshirt pretty black"
   },
@@ -1292,9 +1292,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt pretty white.png",
+    "image": "img/Produtos/tshirts/tshirt pretty white.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt pretty white.png"
+      "img/Produtos/tshirts/tshirt pretty white.png"
     ],
     "description": "tshirt pretty white"
   },
@@ -1314,9 +1314,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt rare black.png",
+    "image": "img/Produtos/tshirts/tshirt rare black.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt rare black.png"
+      "img/Produtos/tshirts/tshirt rare black.png"
     ],
     "description": "tshirt rare black"
   },
@@ -1336,9 +1336,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt rare white.png",
+    "image": "img/Produtos/tshirts/tshirt rare white.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt rare white.png"
+      "img/Produtos/tshirts/tshirt rare white.png"
     ],
     "description": "tshirt rare white"
   },
@@ -1358,9 +1358,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt rich black.png",
+    "image": "img/Produtos/tshirts/tshirt rich black.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt rich black.png"
+      "img/Produtos/tshirts/tshirt rich black.png"
     ],
     "description": "tshirt rich black"
   },
@@ -1380,9 +1380,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt rich white.png",
+    "image": "img/Produtos/tshirts/tshirt rich white.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt rich white.png"
+      "img/Produtos/tshirts/tshirt rich white.png"
     ],
     "description": "tshirt rich white"
   },
@@ -1402,9 +1402,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt since black.png",
+    "image": "img/Produtos/tshirts/tshirt since black.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt since black.png"
+      "img/Produtos/tshirts/tshirt since black.png"
     ],
     "description": "tshirt since black"
   },
@@ -1424,9 +1424,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt since white.png",
+    "image": "img/Produtos/tshirts/tshirt since white.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt since white.png"
+      "img/Produtos/tshirts/tshirt since white.png"
     ],
     "description": "tshirt since white"
   },
@@ -1446,9 +1446,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt spider black.png",
+    "image": "img/Produtos/tshirts/tshirt spider black.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt spider black.png"
+      "img/Produtos/tshirts/tshirt spider black.png"
     ],
     "description": "tshirt spider black"
   },
@@ -1468,9 +1468,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt spider girl black.png",
+    "image": "img/Produtos/tshirts/tshirt spider girl black.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt spider girl black.png"
+      "img/Produtos/tshirts/tshirt spider girl black.png"
     ],
     "description": "tshirt spider girl black"
   },
@@ -1490,9 +1490,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt spider girl white.png",
+    "image": "img/Produtos/tshirts/tshirt spider girl white.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt spider girl white.png"
+      "img/Produtos/tshirts/tshirt spider girl white.png"
     ],
     "description": "tshirt spider girl white"
   },
@@ -1512,9 +1512,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt sza white.png",
+    "image": "img/Produtos/tshirts/tshirt sza white.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt sza white.png"
+      "img/Produtos/tshirts/tshirt sza white.png"
     ],
     "description": "tshirt sza white"
   },
@@ -1534,9 +1534,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt too hot black.png",
+    "image": "img/Produtos/tshirts/tshirt too hot black.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt too hot black.png"
+      "img/Produtos/tshirts/tshirt too hot black.png"
     ],
     "description": "tshirt too hot black"
   },
@@ -1556,9 +1556,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt too hot white.png",
+    "image": "img/Produtos/tshirts/tshirt too hot white.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt too hot white.png"
+      "img/Produtos/tshirts/tshirt too hot white.png"
     ],
     "description": "tshirt too hot white"
   },
@@ -1578,9 +1578,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt too hot.png",
+    "image": "img/Produtos/tshirts/tshirt too hot.png",
     "gallery": [
-      "img/produtos/tshirts/tshirt too hot.png"
+      "img/Produtos/tshirts/tshirt too hot.png"
     ],
     "description": "tshirt too hot"
   },
@@ -1600,9 +1600,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/tshirts/tshirt trust.jpeg",
+    "image": "img/Produtos/tshirts/tshirt trust.jpeg",
     "gallery": [
-      "img/produtos/tshirts/tshirt trust.jpeg"
+      "img/Produtos/tshirts/tshirt trust.jpeg"
     ],
     "description": "tshirt trust"
   },
@@ -1622,9 +1622,9 @@
     "stock": 20,
     "isNew": true,
     "isSale": false,
-    "image": "img/produtos/wideleg/wide leg blessed.png",
+    "image": "img/Produtos/wideleg/wide leg blessed.png",
     "gallery": [
-      "img/produtos/wideleg/wide leg blessed.png"
+      "img/Produtos/wideleg/wide leg blessed.png"
     ],
     "description": "wide leg blessed"
   }
