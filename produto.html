@@ -70,7 +70,11 @@
           </div>
 
           <div style="display:flex; gap:1rem; margin-top:2rem;">
-            <button class="btn-primary" onclick="WhatsAppModule.buySingleProduct(ProductsManager.getById('${product.id}'), selectedSize)">Comprar pelo WhatsApp</button>
+            <button
+onclick="openProductModal(ProductsManager.getById('${p.id}'))"
+class="btn-primary">
+Comprar
+</button>
             <button class="btn-secondary" onclick="Cart.addItem(ProductsManager.getById('${product.id}'), selectedSize); alert('Adicionado!');">Adicionar ao Carrinho</button>
           </div>
         </div>
