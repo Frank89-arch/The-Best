@@ -10,11 +10,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Actualizar contador do carrinho
     Cart.updateBadges();
 
-    // Produtos em destaque (caso exista a secção)
-    if (document.getElementById("featured-products")) {
-        renderFeaturedProducts();
-    }
-
     // ==========================
     // Carrinho
     // ==========================
