@@ -146,4 +146,38 @@ Comprar
     });
   </script>
 </body>
+<!-- Modal do Produto -->
+<div id="product-modal" class="product-modal">
+
+    <div class="product-modal-content">
+
+        <span id="close-product-modal" class="close-modal">&times;</span>
+
+        <img id="modal-image" src="" alt="Produto">
+
+        <h2 id="modal-name"></h2>
+
+        <p id="modal-price"></p>
+
+        <label>Tamanho</label>
+
+        <select id="modal-size"></select>
+
+        <label>Quantidade</label>
+
+        <div class="qty-selector">
+
+            <button id="qty-minus">−</button>
+
+            <span id="qty-value">1</span>
+
+            <button id="qty-plus">+</button>
+
+        </div>
+
+        <button id="add-cart-modal" class="btn-primary">
+            Adicionar ao Carrinho
+        </button>
+
+    </div>
 </html>
