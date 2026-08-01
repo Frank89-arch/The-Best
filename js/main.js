@@ -90,11 +90,16 @@ function openProductModal(product) {
 
 }
 
-document.getElementById("close-product-modal").onclick = () => {
+const closeModalBtn = document.getElementById("close-product-modal");
 
-    document.getElementById("product-modal").classList.remove("active");
+if (closeModalBtn) {
 
-};
+    closeModalBtn.onclick = () => {
+
+        document.getElementById("product-modal").classList.remove("active");
+
+    };
+}
 
 document.getElementById("qty-plus").onclick = () => {
 
