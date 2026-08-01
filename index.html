@@ -125,55 +125,6 @@
 <script src="js/whatsapp.js"></script>
 <script src="js/main.js"></script>
 
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const container = document.getElementById('featured-products');
-    const items = ProductsManager.getAll().slice(0, 4);
-
-    container.innerHTML = items.map(p => `
-        <div class="product-card">
-            ...
-        </div>
-    `).join('');
-});
-</script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const container = document.getElementById('featured-products');
-      const items = ProductsManager.getAll().slice(0, 4);
-      
-      container.innerHTML = items.map(p => `
-        <div class="product-card">
-          <div class="product-image-container">
-            <div class="tags">
-              ${p.isNew ? '<span class="tag tag-new">Novo</span>' : ''}
-              ${p.isSale ? '<span class="tag tag-sale">Promoção</span>' : ''}
-            </div>
-            <img src="${p.image}" class="product-image" alt="${p.name}" loading="lazy">
-          </div>
-          <div class="product-info">
-            <span class="product-category">${p.category}</span>
-            <h3 class="product-title">${p.name}</h3>
-            <div class="product-price">
-              ${p.oldPrice ? `<span class="old-price">${ProductsManager.formatMoney(p.oldPrice)}</span>` : ""}
-              ${ProductsManager.formatMoney(ProductsManager.getPrice(p)
-)}
-            </div>
-            <div class="product-actions">
-              <a href="produto.html?id=${p.id}" class="btn-secondary" style="font-size:0.7rem; padding:0.6rem;">Detalhes</a>
-              <button
-onclick="openProductModal(ProductsManager.getById('${p.id}'))"
-class="btn-primary">
-
-Comprar
-
-</button>
-            </div>
-          </div>
-        </div>
-      `).join('');
-    });
-  </script>
-</body>
 <!-- Modal do Produto -->
 <div id="product-modal" class="product-modal">
 
@@ -210,4 +161,5 @@ Comprar
     </div>
 
 </div>
+</body>
 </html>
