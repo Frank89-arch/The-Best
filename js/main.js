@@ -101,44 +101,62 @@ if (closeModalBtn) {
     };
 }
 
-document.getElementById("qty-plus").onclick = () => {
+const qtyPlus = document.getElementById("qty-plus");
 
-    selectedQuantity++;
+if (qtyPlus) {
 
-    document.getElementById("qty-value").textContent = selectedQuantity;
+    qtyPlus.onclick = () => {
 
-};
-
-document.getElementById("qty-minus").onclick = () => {
-
-    if (selectedQuantity > 1) {
-
-        selectedQuantity--;
+        selectedQuantity++;
 
         document.getElementById("qty-value").textContent = selectedQuantity;
 
-    }
+    };
 
-};
-document.getElementById("add-cart-modal").onclick = () => {
+}
 
-    const size = document.getElementById("modal-size").value;
+const qtyMinus = document.getElementById("qty-minus");
 
-    Cart.addItem(
+if (qtyMinus) {
 
-        selectedProduct,
+    qtyMinus.onclick = () => {
 
-        size,
+        if (selectedQuantity > 1) {
 
-        selectedProduct.color || "Padrão",
+            selectedQuantity--;
 
-        selectedQuantity
+            document.getElementById("qty-value").textContent = selectedQuantity;
 
-    );
+        }
 
-    document
-        .getElementById("product-modal")
-        .classList
-        .remove("active");
+    };
 
-};
+}
+const addCartModal = document.getElementById("add-cart-modal");
+
+if (addCartModal) {
+
+    addCartModal.onclick = () => {
+
+        const size = document.getElementById("modal-size").value;
+
+        Cart.addItem(
+
+            selectedProduct,
+
+            size,
+
+            selectedProduct.color || "Padrão",
+
+            selectedQuantity
+
+        );
+
+        document
+            .getElementById("product-modal")
+            .classList
+            .remove("active");
+
+    };
+
+}
