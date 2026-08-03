@@ -915,3 +915,16 @@ button, input, select, textarea {
     color:#111;
 
 }
+.catalog-content{
+
+    width:100%;
+
+    min-width:0;
+
+}
+
+.catalog-content .products-grid{
+
+    width:100%;
+
+}
