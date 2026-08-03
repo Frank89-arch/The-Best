@@ -223,9 +223,9 @@ width:100%;
 
 display:grid;
 
-grid-template-columns:repeat(2,1fr);
+grid-template-columns:1fr;
 
-gap:15px;
+gap:20px;
 
 }
 
@@ -237,7 +237,7 @@ width:100%;
 
 .product-image{
 
-height:240px;
+height:420px;
 
 object-fit:cover;
 
