@@ -1,7 +1,7 @@
 /*
 =========================================
 THE BEST
-PÁGINA DO PRODUTO
+PRODUCT PAGE
 =========================================
 */
 
@@ -13,6 +13,20 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     await ProductsManager.init();
 
+    initCart();
+
+    loadProduct();
+
+});
+
+/*
+=========================================
+INICIALIZAR CARRINHO
+=========================================
+*/
+
+function initCart() {
+
     Cart.updateBadges();
 
     const cartBtn = document.getElementById("cart-btn");
@@ -22,8 +36,15 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     function toggleCart() {
 
+        if (!cartDrawer) return;
+
         cartDrawer.classList.toggle("open");
-        overlay.classList.toggle("active");
+
+        if (overlay) {
+
+            overlay.classList.toggle("active");
+
+        }
 
         Cart.renderDrawer();
 
@@ -38,29 +59,51 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (overlay)
         overlay.onclick = toggleCart;
 
-    const params = new URLSearchParams(window.location.search);
-
-const id = params.get("id");
-
-currentProduct = ProductsManager.getById(id);
-
-if (!currentProduct) {
-
-    document.querySelector(".product-page").innerHTML =
-        "<h2 style='text-align:center;margin:100px'>Produto não encontrado.</h2>";
-
-    return;
-
 }
 
-renderProduct();
-renderRelatedProducts();
+/*
+=========================================
+CARREGAR PRODUTO
+=========================================
+*/
 
-});
+function loadProduct() {
+
+    const params = new URLSearchParams(window.location.search);
+
+    const id = params.get("id");
+
+    currentProduct = ProductsManager.getById(id);
+
+    if (!currentProduct) {
+
+        document.querySelector(".product-page").innerHTML = `
+            <div style="text-align:center;padding:120px;">
+                <h2>Produto não encontrado.</h2>
+            </div>
+        `;
+
+        return;
+
+    }
+
+    renderProduct();
+
+    renderRelatedProducts();
+
+    initButtons();
+
+}
+/*
+=========================================
+MOSTRAR PRODUTO
+=========================================
+*/
 
 function renderProduct() {
 
     document.getElementById("product-image").src = currentProduct.image;
+    document.getElementById("product-image").alt = currentProduct.name;
 
     document.getElementById("product-name").textContent =
         currentProduct.name;
@@ -87,7 +130,10 @@ function renderProduct() {
 
     renderSizes();
 
+    document.getElementById("qty-value").textContent = quantity;
+
 }
+
 /*
 =========================================
 TAMANHOS
@@ -110,17 +156,19 @@ function renderSizes() {
 
         if (index === 0) {
 
-            button.classList.add("active");
-
             selectedSize = size;
+
+            button.classList.add("active");
 
         }
 
         button.onclick = () => {
 
-            document
-                .querySelectorAll(".size-btn")
-                .forEach(btn => btn.classList.remove("active"));
+            document.querySelectorAll(".size-btn").forEach(btn => {
+
+                btn.classList.remove("active");
+
+            });
 
             button.classList.add("active");
 
@@ -136,142 +184,110 @@ function renderSizes() {
 
 /*
 =========================================
-QUANTIDADE
+BOTÕES
 =========================================
 */
 
-const qtyPlus = document.getElementById("qty-plus");
+function initButtons() {
 
-const qtyMinus = document.getElementById("qty-minus");
+    const plus = document.getElementById("qty-plus");
+    const minus = document.getElementById("qty-minus");
 
-const qtyValue = document.getElementById("qty-value");
-
-if (qtyPlus) {
-
-    qtyPlus.onclick = () => {
+    plus.onclick = () => {
 
         quantity++;
 
-        qtyValue.textContent = quantity;
+        document.getElementById("qty-value").textContent = quantity;
 
     };
 
-}
-
-if (qtyMinus) {
-
-    qtyMinus.onclick = () => {
+    minus.onclick = () => {
 
         if (quantity > 1) {
 
             quantity--;
 
-            qtyValue.textContent = quantity;
+            document.getElementById("qty-value").textContent = quantity;
 
         }
 
     };
 
 }
-
 /*
 =========================================
-ADICIONAR AO CARRINHO
+BOTÕES DE COMPRA
 =========================================
 */
 
-const addCartBtn = document.getElementById("add-cart-btn");
+function initButtons() {
 
-if (addCartBtn) {
+    const plus = document.getElementById("qty-plus");
+    const minus = document.getElementById("qty-minus");
+    const addCart = document.getElementById("add-cart-btn");
+    const buyNow = document.getElementById("buy-now-btn");
 
- addCartBtn.onclick = () => {
+    plus.onclick = () => {
 
-    Cart.addItem(
+        quantity++;
 
-        currentProduct,
+        document.getElementById("qty-value").textContent = quantity;
 
-        selectedSize,
+    };
 
-        "Padrão",
+    minus.onclick = () => {
 
-        quantity
+        if (quantity > 1) {
 
-    );
+            quantity--;
 
-    Toast.show(
+            document.getElementById("qty-value").textContent = quantity;
 
-    currentProduct,
+        }
 
-    selectedSize,
+    };
 
-    quantity
+    addCart.onclick = () => {
 
-);
+        Cart.addItem(
 
-};
+            currentProduct,
 
-}
-const buyNowBtn = document.getElementById("buy-now-btn");
+            selectedSize,
 
-if (buyNowBtn) {
+            "Padrão",
 
-    buyNowBtn.onclick = () => {
+            quantity
 
-        const price = ProductsManager.getPrice(currentProduct);
+        );
 
-        const total = price * quantity;
+        Cart.updateBadges();
 
-        const message = `Olá!
+        Cart.renderDrawer();
 
-Gostaria de comprar o seguinte produto:
+        Toast.show(
 
-Produto: ${currentProduct.name}
+            currentProduct,
 
-Tamanho: ${selectedSize}
+            selectedSize,
 
-Quantidade: ${quantity}
-
-Preço Unitário: ${ProductsManager.formatMoney(price)}
-
-Total: ${ProductsManager.formatMoney(total)}
-
-Obrigado.`;
-
-        const phone = WhatsAppModule.phoneNumber || "258XXXXXXXXX";
-
-        window.open(
-
-            `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
-
-            "_blank"
+            quantity
 
         );
 
     };
 
-}
-
-/*
-=========================================
-COMPRAR AGORA
-=========================================
-*/
-
-const buyNowBtn = document.getElementById("buy-now-btn");
-
-if (buyNowBtn) {
-
-    buyNowBtn.onclick = () => {
+    buyNow.onclick = () => {
 
         const preco = ProductsManager.getPrice(currentProduct);
 
         const total = preco * quantity;
 
+        const telefone = WhatsAppModule.phoneNumber || "258XXXXXXXXX";
+
         const mensagem = `Olá!
 
 Gostaria de efectuar a seguinte encomenda.
-
-━━━━━━━━━━━━━━
 
 🛍 Produto:
 ${currentProduct.name}
@@ -288,14 +304,96 @@ ${ProductsManager.formatMoney(preco)}
 💵 Total:
 ${ProductsManager.formatMoney(total)}
 
-━━━━━━━━━━━━━━
+Obrigado.`;
 
-Aguardo a confirmação.
+        window.open(
 
-Muito obrigado.`;
+            `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`,
 
-        WhatsAppModule.sendMessage(mensagem);
+            "_blank"
+
+        );
 
     };
+
+}
+
+/*
+=========================================
+PRODUTOS RELACIONADOS
+=========================================
+*/
+
+function renderRelatedProducts() {
+
+    const container = document.getElementById("related-products");
+
+    if (!container) return;
+
+    const relacionados = ProductsManager
+        .getAll()
+        .filter(p => p.id !== currentProduct.id)
+        .slice(0,4);
+
+    container.innerHTML = relacionados.map(product => `
+
+        <div class="product-card">
+
+            <div class="product-image-container">
+
+                <img
+                    src="${product.image}"
+                    class="product-image"
+                    alt="${product.name}">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+
+                    ${product.category}
+
+                </span>
+
+                <h3 class="product-title">
+
+                    ${product.name}
+
+                </h3>
+
+                <div class="product-price">
+
+                    ${ProductsManager.formatMoney(
+                        ProductsManager.getPrice(product)
+                    )}
+
+                </div>
+
+                <div class="product-actions">
+
+                    <a
+                        href="produto.html?id=${product.id}"
+                        class="btn-secondary">
+
+                        Ver
+
+                    </a>
+
+                    <button
+                        class="btn-primary"
+                        onclick="openProductModal(ProductsManager.getById('${product.id}'))">
+
+                        Comprar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    `).join("");
 
 }
