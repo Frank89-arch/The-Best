@@ -744,3 +744,174 @@ button, input, select, textarea {
     margin-top:40px;
 
 }
+.btn-gold{
+
+    background:#D4AF37;
+
+    color:#000;
+
+    font-weight:700;
+
+    border:none;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn-gold:hover{
+
+    transform:translateY(-2px);
+
+    filter:brightness(1.05);
+
+}
+.btn-gold{
+
+    background:#D4AF37;
+
+    color:#111;
+
+    border:none;
+
+    padding:16px 24px;
+
+    border-radius:8px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn-gold:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 25px rgba(212,175,55,.35);
+
+}
+
+.product-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:35px;
+
+    flex-wrap:wrap;
+
+}
+#toast{
+
+    position:fixed;
+
+    right:25px;
+
+    top:25px;
+
+    width:340px;
+
+    background:#1b1b1b;
+
+    color:#fff;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    opacity:0;
+
+    transform:translateX(120%);
+
+    transition:.35s;
+
+    z-index:999999;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+#toast.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.toast-header{
+
+    background:#D4AF37;
+
+    color:#111;
+
+    padding:14px;
+
+    font-weight:bold;
+
+}
+
+.toast-body{
+
+    display:flex;
+
+    gap:15px;
+
+    padding:15px;
+
+    align-items:center;
+
+}
+
+.toast-image{
+
+    width:70px;
+
+    height:70px;
+
+    object-fit:cover;
+
+    border-radius:8px;
+
+}
+
+.toast-buttons{
+
+    display:flex;
+
+}
+
+.toast-buttons button{
+
+    flex:1;
+
+    border:none;
+
+    padding:14px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+#continue-shopping{
+
+    background:#2b2b2b;
+
+    color:#fff;
+
+}
+
+#view-cart{
+
+    background:#D4AF37;
+
+    color:#111;
+
+}
