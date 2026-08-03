@@ -1,51 +1,417 @@
 /* ==========================================================================
-   THE BEST - RESPONSIVIDADE
-   ========================================================================== */
+   THE BEST
+   RESPONSIVE
+========================================================================== */
 
-@media (max-width: 992px) {
-  .hero-title {
-    font-size: 2.8rem;
-  }
+
+/* ==========================================================================
+   TABLETS
+========================================================================== */
+
+@media screen and (max-width:992px){
+
+.header-container{
+
+padding:0 20px;
+
 }
 
-@media (max-width: 768px) {
-  .header-container {
-    padding: 1rem;
-  }
+.catalog-layout{
 
-  .nav-menu {
-    position: fixed;
-    top: 70px;
-    left: -100%;
-    width: 100%;
-    height: calc(100vh - 70px);
-    background: var(--color-black);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    transition: var(--transition-smooth);
-  }
+grid-template-columns:220px 1fr;
 
-  .nav-menu.active {
-    left: 0;
-  }
+gap:20px;
 
-  .mobile-toggle {
-    display: block !important;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-  }
-
-  .product-actions {
-    grid-template-columns: 1fr;
-  }
 }
 
-.mobile-toggle {
-  display: none;
+.products-grid{
+
+grid-template-columns:repeat(3,1fr);
+
+gap:20px;
+
+}
+
+.hero-title{
+
+font-size:2.8rem;
+
+}
+
+.product-container{
+
+grid-template-columns:1fr;
+
+gap:40px;
+
+}
+
+.product-gallery{
+
+max-width:550px;
+
+margin:auto;
+
+}
+
+.product-info{
+
+width:100%;
+
+}
+
+}
+
+
+/* ==========================================================================
+   CELULAR
+========================================================================== */
+
+@media screen and (max-width:768px){
+
+
+/* HEADER */
+
+.header{
+
+padding:10px 0;
+
+}
+
+.header-container{
+
+padding:0 15px;
+
+}
+
+.logo img{
+
+height:42px;
+
+}
+
+.mobile-toggle{
+
+display:block;
+
+font-size:28px;
+
+cursor:pointer;
+
+color:#fff;
+
+}
+
+.nav-menu{
+
+position:fixed;
+
+top:72px;
+
+left:-100%;
+
+width:100%;
+
+height:calc(100vh - 72px);
+
+background:#000;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+gap:25px;
+
+transition:.35s;
+
+z-index:999;
+
+}
+
+.nav-menu.active{
+
+left:0;
+
+}
+
+
+/* HERO */
+
+.hero{
+
+padding:120px 20px 70px;
+
+text-align:center;
+
+}
+
+.hero-title{
+
+font-size:2.2rem;
+
+line-height:1.2;
+
+}
+
+.hero-subtitle{
+
+font-size:1rem;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.hero-buttons a{
+
+width:100%;
+
+text-align:center;
+
+}
+
+
+/* CATÁLOGO */
+
+.catalog-layout{
+
+display:flex;
+
+flex-direction:column;
+
+padding:15px;
+
+}
+
+.filter-box{
+
+width:100%;
+
+margin-bottom:20px;
+
+}
+
+.filter-group{
+
+margin-bottom:15px;
+
+}
+
+.filter-group input,
+
+.filter-group select{
+
+width:100%;
+
+}
+
+
+/* PRODUTOS */
+
+.products-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
+
+}
+
+.product-card{
+
+width:100%;
+
+}
+
+.product-image{
+
+height:240px;
+
+object-fit:cover;
+
+}
+
+.product-title{
+
+font-size:1rem;
+
+}
+
+.product-price{
+
+font-size:1.1rem;
+
+}
+
+.product-actions{
+
+display:grid;
+
+grid-template-columns:1fr;
+
+gap:10px;
+
+}
+
+.product-actions a,
+
+.product-actions button{
+
+width:100%;
+
+}
+
+
+/* PÁGINA DO PRODUTO */
+
+.product-container{
+
+display:flex;
+
+flex-direction:column;
+
+gap:25px;
+
+padding:20px;
+
+}
+
+.product-gallery{
+
+width:100%;
+
+}
+
+.main-image{
+
+width:100%;
+
+border-radius:10px;
+
+}
+
+.product-info{
+
+width:100%;
+
+}
+
+.product-buttons{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.product-buttons button{
+
+width:100%;
+
+}
+
+.qty-box{
+
+justify-content:center;
+
+}
+
+.sizes{
+
+margin-top:20px;
+
+}
+
+
+/* CARRINHO */
+
+.cart-drawer{
+
+width:100%;
+
+max-width:100%;
+
+}
+
+.cart-footer button{
+
+width:100%;
+
+}
+
+
+/* MODAL */
+
+.product-modal-content{
+
+width:95%;
+
+padding:20px;
+
+}
+
+#modal-image{
+
+width:100%;
+
+height:auto;
+
+}
+
+.qty-selector{
+
+justify-content:center;
+
+}
+
+#modal-size{
+
+width:100%;
+
+}
+
+
+/* FOOTER */
+
+.footer-content{
+
+display:flex;
+
+flex-direction:column;
+
+gap:30px;
+
+text-align:center;
+
+}
+
+.footer-column{
+
+width:100%;
+
+}
+
+}
+
+
+/* MOBILE TOGGLE */
+
+.mobile-toggle{
+
+display:none;
+
 }
