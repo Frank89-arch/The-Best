@@ -68,15 +68,32 @@ width:100%;
 ========================================================================== */
 
 @media screen and (max-width:768px){
-  .catalog-content{
+ .products-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px;
+
+}
+.catalog-layout{
+
+    display:block !important;
+
+    width:100%;
+
+    padding:15px;
+
+}
+
+.catalog-content{
 
     width:100%;
 
 }
 
-.catalog-content .products-grid{
-
-    grid-template-columns:1fr;
+#catalog-products{
 
     width:100%;
 
