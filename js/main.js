@@ -67,19 +67,3 @@ if (mobileFilterBtn && mobileFilters) {
     });
 
 }
-/* ===========================
-   FILTROS MOBILE
-=========================== */
-
-const mobileFilterBtn = document.getElementById("mobile-filter-btn");
-const mobileFilters = document.getElementById("mobile-filters");
-
-if (mobileFilterBtn && mobileFilters) {
-
-    mobileFilterBtn.addEventListener("click", () => {
-
-        mobileFilters.classList.toggle("active");
-
-    });
-
-}
