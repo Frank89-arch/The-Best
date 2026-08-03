@@ -13,6 +13,26 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     await ProductsManager.init();
 
+    Cart.updateBadges();
+
+    const cartBtn = document.getElementById("cart-btn");
+    const cartDrawer = document.getElementById("cart-drawer");
+    const closeCart = document.getElementById("close-cart");
+    const overlay = document.getElementById("overlay");
+
+    function toggleCart() {
+
+        cartDrawer.classList.toggle("open");
+        overlay.classList.toggle("active");
+
+        Cart.renderDrawer();
+
+    }
+
+    if (cartBtn) cartBtn.onclick = toggleCart;
+    if (closeCart) closeCart.onclick = toggleCart;
+    if (overlay) overlay.onclick = toggleCart;
+
     const params = new URLSearchParams(window.location.search);
 
     const id = params.get("id");
@@ -22,7 +42,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (!currentProduct) {
 
         document.querySelector(".product-page").innerHTML =
-            "<h2 style='text-align:center;margin:120px 0;'>Produto não encontrado.</h2>";
+            "<h2>Produto não encontrado.</h2>";
 
         return;
 
@@ -201,5 +221,63 @@ if (whatsappBtn) {
         );
 
     };
+
+}
+function renderRelatedProducts() {
+
+    const container = document.getElementById("related-products");
+
+    if (!container) return;
+
+    const products = ProductsManager
+        .getAll()
+        .filter(p => p.id !== currentProduct.id)
+        .slice(0, 4);
+
+    container.innerHTML = products.map(product => `
+
+        <div class="product-card">
+
+            <div class="product-image-container">
+
+                <img src="${product.image}" class="product-image">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="product-category">
+
+                    ${product.category}
+
+                </span>
+
+                <h3 class="product-title">
+
+                    ${product.name}
+
+                </h3>
+
+                <div class="product-price">
+
+                    ${ProductsManager.formatMoney(
+                        ProductsManager.getPrice(product)
+                    )}
+
+                </div>
+
+                <a href="produto.html?id=${product.id}"
+
+                   class="btn-primary">
+
+                    Ver Produto
+
+                </a>
+
+            </div>
+
+        </div>
+
+    `).join("");
 
 }
