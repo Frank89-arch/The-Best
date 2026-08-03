@@ -108,7 +108,7 @@ decrease(index) {
 
     if (this.items.length === 0) {
       container.innerHTML = `<p style="text-align:center; color:#888; margin-top:2rem;">O seu carrinho está vazio.</p>`;
-      if (totalEl) totalEl.textContent = '0.00 MT';
+      if (totalEl) totalEl.textContent = '0,00 MZN';
       return;
     }
 
