@@ -29,26 +29,32 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     }
 
-    if (cartBtn) cartBtn.onclick = toggleCart;
-    if (closeCart) closeCart.onclick = toggleCart;
-    if (overlay) overlay.onclick = toggleCart;
+    if (cartBtn)
+        cartBtn.onclick = toggleCart;
+
+    if (closeCart)
+        closeCart.onclick = toggleCart;
+
+    if (overlay)
+        overlay.onclick = toggleCart;
 
     const params = new URLSearchParams(window.location.search);
 
-    const id = params.get("id");
+const id = params.get("id");
 
-    currentProduct = ProductsManager.getById(id);
+currentProduct = ProductsManager.getById(id);
 
-    if (!currentProduct) {
+if (!currentProduct) {
 
-        document.querySelector(".product-page").innerHTML =
-            "<h2>Produto não encontrado.</h2>";
+    document.querySelector(".product-page").innerHTML =
+        "<h2 style='text-align:center;margin:100px'>Produto não encontrado.</h2>";
 
-        return;
+    return;
 
-    }
+}
 
-    renderProduct();
+renderProduct();
+renderRelatedProducts();
 
 });
 
