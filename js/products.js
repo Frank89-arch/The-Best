@@ -31,7 +31,7 @@ const ProductsManager = {
     return new Intl.NumberFormat('pt-MZ', {
       style: 'currency',
       currency: 'MZN'
-    }).format(amount).replace('MZN', 'MT');
+    }).format(amount).replace('MT', 'MZN');
   },
   getPrice(product) {
   return getPrice(product.category, product.model);
