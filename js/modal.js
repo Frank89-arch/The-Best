@@ -88,24 +88,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("add-cart-modal").onclick = () => {
 
-        const size = document.getElementById("modal-size").value;
+       const size = document.getElementById("modal-size").value;
 
-        Cart.addItem(
+    Cart.addItem(
 
-            selectedProduct,
-            size,
-            selectedProduct.color || "Padrão",
-            selectedQuantity
+        selectedProduct,
 
-        );
+        size,
 
-        modal.classList.remove("active");
+        selectedProduct.color || "Padrão",
 
-        Cart.renderDrawer();
-        Cart.updateBadges();
+        selectedQuantity
 
-    };
+    );
 
+    modal.classList.remove("active");
+
+    Cart.renderDrawer();
+    Cart.updateBadges();
+
+    Toast.show(
+
+    selectedProduct,
+
+    size,
+
+    selectedQuantity
+
+);
+
+};
     document.addEventListener("keydown", (e) => {
 
         if (e.key === "Escape") {
