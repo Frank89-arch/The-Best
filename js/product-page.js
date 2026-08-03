@@ -184,21 +184,68 @@ const addCartBtn = document.getElementById("add-cart-btn");
 
 if (addCartBtn) {
 
-    addCartBtn.onclick = () => {
+ addCartBtn.onclick = () => {
 
-        Cart.addItem(
+    Cart.addItem(
 
-            currentProduct,
+        currentProduct,
 
-            selectedSize,
+        selectedSize,
 
-            "Padrão",
+        "Padrão",
 
-            quantity
+        quantity
+
+    );
+
+    Toast.show(
+
+    currentProduct,
+
+    selectedSize,
+
+    quantity
+
+);
+
+};
+
+}
+const buyNowBtn = document.getElementById("buy-now-btn");
+
+if (buyNowBtn) {
+
+    buyNowBtn.onclick = () => {
+
+        const price = ProductsManager.getPrice(currentProduct);
+
+        const total = price * quantity;
+
+        const message = `Olá!
+
+Gostaria de comprar o seguinte produto:
+
+Produto: ${currentProduct.name}
+
+Tamanho: ${selectedSize}
+
+Quantidade: ${quantity}
+
+Preço Unitário: ${ProductsManager.formatMoney(price)}
+
+Total: ${ProductsManager.formatMoney(total)}
+
+Obrigado.`;
+
+        const phone = WhatsAppModule.phoneNumber || "258XXXXXXXXX";
+
+        window.open(
+
+            `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
+
+            "_blank"
 
         );
-
-        alert("Produto adicionado ao carrinho.");
 
     };
 
@@ -206,84 +253,49 @@ if (addCartBtn) {
 
 /*
 =========================================
-COMPRAR PELO WHATSAPP
+COMPRAR AGORA
 =========================================
 */
 
-const whatsappBtn = document.getElementById("buy-whatsapp-btn");
+const buyNowBtn = document.getElementById("buy-now-btn");
 
-if (whatsappBtn) {
+if (buyNowBtn) {
 
-    whatsappBtn.onclick = () => {
+    buyNowBtn.onclick = () => {
 
-        WhatsAppModule.buySingleProduct(
+        const preco = ProductsManager.getPrice(currentProduct);
 
-            currentProduct,
+        const total = preco * quantity;
 
-            selectedSize,
+        const mensagem = `Olá!
 
-            quantity
+Gostaria de efectuar a seguinte encomenda.
 
-        );
+━━━━━━━━━━━━━━
+
+🛍 Produto:
+${currentProduct.name}
+
+📏 Tamanho:
+${selectedSize}
+
+🔢 Quantidade:
+${quantity}
+
+💰 Preço Unitário:
+${ProductsManager.formatMoney(preco)}
+
+💵 Total:
+${ProductsManager.formatMoney(total)}
+
+━━━━━━━━━━━━━━
+
+Aguardo a confirmação.
+
+Muito obrigado.`;
+
+        WhatsAppModule.sendMessage(mensagem);
 
     };
-
-}
-function renderRelatedProducts() {
-
-    const container = document.getElementById("related-products");
-
-    if (!container) return;
-
-    const products = ProductsManager
-        .getAll()
-        .filter(p => p.id !== currentProduct.id)
-        .slice(0, 4);
-
-    container.innerHTML = products.map(product => `
-
-        <div class="product-card">
-
-            <div class="product-image-container">
-
-                <img src="${product.image}" class="product-image">
-
-            </div>
-
-            <div class="product-info">
-
-                <span class="product-category">
-
-                    ${product.category}
-
-                </span>
-
-                <h3 class="product-title">
-
-                    ${product.name}
-
-                </h3>
-
-                <div class="product-price">
-
-                    ${ProductsManager.formatMoney(
-                        ProductsManager.getPrice(product)
-                    )}
-
-                </div>
-
-                <a href="produto.html?id=${product.id}"
-
-                   class="btn-primary">
-
-                    Ver Produto
-
-                </a>
-
-            </div>
-
-        </div>
-
-    `).join("");
 
 }
