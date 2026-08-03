@@ -222,28 +222,23 @@ class="products-grid">
 
 </section>
 
+...
+</section>
+
 </main>
 
-<script src="js/prices.js"></script>
-
-<script src="js/products.js"></script>
-
-<script src="js/cart.js"></script>
-
-<script src="js/whatsapp.js"></script>
-
-<script src="js/main.js"></script>
-
-<script src="js/modal.js"></script>
-
-<script src="js/product-page.js"></script>
+<!-- Carrinho -->
 <aside class="cart-drawer" id="cart-drawer">
 
     <div class="cart-header">
 
         <h3>Seu Carrinho</h3>
 
-        <button id="close-cart">&times;</button>
+        <button
+            id="close-cart"
+            style="background:none;border:none;color:#fff;font-size:28px;cursor:pointer;">
+            &times;
+        </button>
 
     </div>
 
@@ -259,7 +254,10 @@ class="products-grid">
 
         </div>
 
-        <button class="btn-primary" onclick="WhatsAppModule.checkoutCart()">
+        <button
+            class="btn-primary"
+            style="width:100%;"
+            onclick="WhatsAppModule.checkoutCart()">
 
             Finalizar no WhatsApp
 
@@ -269,6 +267,13 @@ class="products-grid">
 
 </aside>
 
-</body>
+<script src="js/prices.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/whatsapp.js"></script>
+<script src="js/main.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/product-page.js"></script>
 
+</body>
 </html>
