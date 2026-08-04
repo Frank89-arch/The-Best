@@ -154,7 +154,11 @@
 
     await ProductsManager.init();
       const render = () => {
-        const query = document.getElementById('search-input').value;
+       const searchInput =
+    document.getElementById('search-input-mobile') ||
+    document.getElementById('search-input');
+
+const query = searchInput ? searchInput.value : "";
         const category = document.getElementById('category-filter').value;
         const sortBy = document.getElementById('sort-filter').value;
 
@@ -185,15 +189,25 @@ Comprar
         `).join('');
       };
 
-      const searchInput =
+    const searchInput =
     document.getElementById('search-input-mobile') ||
     document.getElementById('search-input');
 
 if (searchInput) {
     searchInput.addEventListener('input', render);
 }
-      document.getElementById('category-filter').addEventListener('change', render);
-      document.getElementById('sort-filter').addEventListener('change', render);
+
+const categoryFilter = document.getElementById('category-filter');
+
+if (categoryFilter) {
+    categoryFilter.addEventListener('change', render);
+}
+
+const sortFilter = document.getElementById('sort-filter');
+
+if (sortFilter) {
+    sortFilter.addEventListener('change', render);
+}
       render();
     });
   </script>
