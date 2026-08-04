@@ -154,13 +154,18 @@
 
     await ProductsManager.init();
       const render = () => {
-       const searchInput =
-    document.getElementById('search-input-mobile') ||
-    document.getElementById('search-input');
 
-const query = searchInput ? searchInput.value : "";
-        const category = document.getElementById('category-filter').value;
-        const sortBy = document.getElementById('sort-filter').value;
+    const searchInput =
+        document.getElementById('search-input-mobile') ||
+        document.getElementById('search-input');
+
+    const query = searchInput ? searchInput.value : "";
+
+    const category = document.getElementById('category-filter').value;
+
+    const sortBy = document.getElementById('sort-filter').value;
+
+}
 
         const filtered = SearchModule.filter(ProductsManager.getAll(), { searchQuery: query, category, sortBy });
         const container = document.getElementById('catalog-products');
