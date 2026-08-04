@@ -27,12 +27,19 @@ const ProductsManager = {
     return this.products.find(p => p.id === id);
   },
 
-  formatMoney(amount) {
+formatMoney(amount) {
+
     return new Intl.NumberFormat('pt-MZ', {
-      style: 'currency',
-      currency: 'MZN'
-    }).format(amount).replace('MT', 'MZN');
-  },
+
+        style: 'currency',
+
+        currency: 'MZN',
+
+        minimumFractionDigits: 2
+
+    }).format(amount);
+
+},
   getPrice(product) {
   return getPrice(product.category, product.model);
 },
