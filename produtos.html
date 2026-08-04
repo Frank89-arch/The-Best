@@ -149,73 +149,98 @@
 <script src="js/toast.js"></script>
 <script src="js/main.js"></script>
 <script src="js/modal.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', async () => {
+ <script>
+document.addEventListener('DOMContentLoaded', async () => {
 
     await ProductsManager.init();
-      const render = () => {
 
     const searchInput =
         document.getElementById('search-input-mobile') ||
         document.getElementById('search-input');
 
-    const query = searchInput ? searchInput.value : "";
+    const categoryFilter = document.getElementById('category-filter');
+    const sortFilter = document.getElementById('sort-filter');
 
-    const category = document.getElementById('category-filter').value;
+    function render() {
 
-    const sortBy = document.getElementById('sort-filter').value;
+        const query = searchInput ? searchInput.value : "";
 
-}
+        const category = categoryFilter ? categoryFilter.value : "all";
 
-        const filtered = SearchModule.filter(ProductsManager.getAll(), { searchQuery: query, category, sortBy });
-        const container = document.getElementById('catalog-products');
+        const sortBy = sortFilter ? sortFilter.value : "newest";
+
+        const filtered = SearchModule.filter(
+            ProductsManager.getAll(),
+            {
+                searchQuery: query,
+                category,
+                sortBy
+            }
+        );
+
+        const container = document.getElementById("catalog-products");
 
         container.innerHTML = filtered.map(p => `
-          <div class="product-card">
-            <div class="product-image-container">
-              <img src="${p.image}" class="product-image" alt="${p.name}">
+            <div class="product-card">
+
+                <div class="product-image-container">
+
+                    <img src="${p.image}" class="product-image" alt="${p.name}">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">${p.category}</span>
+
+                    <h3 class="product-title">${p.name}</h3>
+
+                    <div class="product-price">
+
+                        ${ProductsManager.formatMoney(ProductsManager.getPrice(p))}
+
+                    </div>
+
+                    <div class="product-actions">
+
+                        <a href="produto.html?id=${p.id}"
+                           class="btn-secondary"
+                           style="font-size:.7rem;padding:.6rem;">
+
+                            Ver
+
+                        </a>
+
+                        <button
+                            class="btn-primary"
+                            onclick="openProductModal(ProductsManager.getById('${p.id}'))">
+
+                            Comprar
+
+                        </button>
+
+                    </div>
+
+                </div>
+
             </div>
-            <div class="product-info">
-              <span class="product-category">${p.category}</span>
-              <h3 class="product-title">${p.name}</h3>
-              <div class="product-price">
-    ${ProductsManager.formatMoney(ProductsManager.getPrice(p))}
-</div>
-              <div class="product-actions">
-                <a href="produto.html?id=${p.id}" class="btn-secondary" style="font-size:0.7rem; padding:0.6rem;">Ver</a>
-                <button
-onclick="openProductModal(ProductsManager.getById('${p.id}'))"
-class="btn-primary">
-Comprar
-</button>
-              </div>
-            </div>
-          </div>
-        `).join('');
-      };
+        `).join("");
 
-    const searchInput =
-    document.getElementById('search-input-mobile') ||
-    document.getElementById('search-input');
+    }
 
-if (searchInput) {
-    searchInput.addEventListener('input', render);
-}
+    if (searchInput)
+        searchInput.addEventListener("input", render);
 
-const categoryFilter = document.getElementById('category-filter');
+    if (categoryFilter)
+        categoryFilter.addEventListener("change", render);
 
-if (categoryFilter) {
-    categoryFilter.addEventListener('change', render);
-}
+    if (sortFilter)
+        sortFilter.addEventListener("change", render);
 
-const sortFilter = document.getElementById('sort-filter');
+    render();
 
-if (sortFilter) {
-    sortFilter.addEventListener('change', render);
-}
-      render();
-    });
-  </script>
+});
+</script>
 
 <!-- Modal do Produto -->
 <div id="product-modal" class="product-modal">
