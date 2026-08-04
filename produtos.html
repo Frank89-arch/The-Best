@@ -185,7 +185,13 @@ Comprar
         `).join('');
       };
 
-      document.getElementById('search-input').addEventListener('input', render);
+      const searchInput =
+    document.getElementById('search-input-mobile') ||
+    document.getElementById('search-input');
+
+if (searchInput) {
+    searchInput.addEventListener('input', render);
+}
       document.getElementById('category-filter').addEventListener('change', render);
       document.getElementById('sort-filter').addEventListener('change', render);
       render();
