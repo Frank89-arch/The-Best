@@ -636,3 +636,82 @@ display:none;
 }
 
 }
+/* =====================================
+   FILTROS MOBILE
+===================================== */
+
+.catalog-mobile-top{
+
+    display:none;
+
+}
+
+@media screen and (max-width:768px){
+
+.catalog-mobile-top{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:15px;
+
+}
+
+.catalog-mobile-top input{
+
+    flex:1;
+
+    height:45px;
+
+    padding:0 15px;
+
+    background:#111;
+
+    border:1px solid #333;
+
+    color:#fff;
+
+    border-radius:6px;
+
+    outline:none;
+
+}
+
+.mobile-filter-btn{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    background:var(--color-gold);
+
+    color:#000;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+}
+
+#mobile-filters{
+
+    display:none;
+
+}
+
+#mobile-filters.active{
+
+    display:block;
+
+    margin-bottom:20px;
+
+}
+
+}
