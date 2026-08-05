@@ -990,6 +990,9 @@ button, input, select, textarea {
 
 }
 
+.about-hero .btn-primary{
+    margin-top:40px;
+}
 
 .about-slogan{
 
@@ -1014,7 +1017,7 @@ button, input, select, textarea {
 
     color:#d5d5d5;
 
-    font-size:1.15rem;
+    font-size:1.2rem;
 
     line-height:2;
 
@@ -1042,9 +1045,9 @@ button, input, select, textarea {
 
 .about-story p{
 
-    color:#cfcfcf;
+    font-size:1.15rem;
 
-    line-height:3.9;
+    line-height:2;
 
 }
 
@@ -1071,6 +1074,10 @@ button, input, select, textarea {
     transition:.35s;
 
     text-align:center;
+    display:flex;
+flex-direction:column;
+justify-content:center;
+min-height:230px;
 
 }
 
