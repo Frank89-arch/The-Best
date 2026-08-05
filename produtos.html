@@ -168,7 +168,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function render() {
 
-        const query = searchInput ? searchInput.value : "";
+       const searchInput =
+    document.getElementById("search-input-mobile") ||
+    document.getElementById("search-input");
+
+const query = searchInput ? searchInput.value : "";
 
         const category = categoryFilter ? categoryFilter.value : "all";
 
