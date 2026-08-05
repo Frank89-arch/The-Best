@@ -793,3 +793,18 @@ width:100%;
 }
 
 }
+@media(max-width:768px){
+
+.product-navigation{
+
+    flex-direction:column;
+
+}
+
+.product-navigation button{
+
+    width:100%;
+
+}
+
+}
