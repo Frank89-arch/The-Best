@@ -1306,3 +1306,47 @@ justify-content:center;
     width:100%;
 
 }
+
+.footer-social-icons{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:15px;
+
+}
+
+.footer-social-icons a{
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:50%;
+
+    color:#fff;
+
+    font-size:1.2rem;
+
+    transition:.3s;
+
+}
+
+.footer-social-icons a:hover{
+
+    background:var(--color-gold);
+
+    color:#000;
+
+    transform:translateY(-4px);
+
+}
