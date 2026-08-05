@@ -1350,3 +1350,23 @@ justify-content:center;
     transform:translateY(-4px);
 
 }
+
+.product-navigation{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:60px 0;
+
+    gap:20px;
+
+}
+
+.product-navigation button{
+
+    min-width:220px;
+
+}
