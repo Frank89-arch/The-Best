@@ -715,3 +715,84 @@ display:none;
 }
 
 }
+/* ===================================
+   MENU MOBILE
+=================================== */
+
+.mobile-menu-btn{
+
+    display:none;
+
+}
+
+@media screen and (max-width:768px){
+
+.mobile-menu-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    background:transparent;
+
+    color:#fff;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+}
+
+.nav-menu{
+
+    position:fixed;
+
+    top:70px;
+
+    left:-100%;
+
+    width:100%;
+
+    height:calc(100vh - 70px);
+
+    background:#000;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    align-items:center;
+
+    padding-top:40px;
+
+    gap:30px;
+
+    transition:.35s;
+
+    z-index:999;
+
+}
+
+.nav-menu.active{
+
+    left:0;
+
+}
+
+.nav-link{
+
+    font-size:20px;
+
+}
+
+}
