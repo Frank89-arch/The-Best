@@ -928,3 +928,182 @@ button, input, select, textarea {
     width:100%;
 
 }
+/* ==========================================
+   SOBRE
+========================================== */
+
+.about-page{
+
+    max-width:1200px;
+
+    margin:120px auto 80px;
+
+    padding:0 20px;
+
+}
+
+.about-hero{
+
+    text-align:center;
+
+    margin-bottom:80px;
+
+}
+
+.about-hero h1{
+
+    font-family:var(--font-heading);
+
+    font-size:4rem;
+
+    color:var(--color-gold);
+
+    margin-bottom:15px;
+
+}
+
+.about-slogan{
+
+    font-size:1.4rem;
+
+    color:#fff;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.about-intro{
+
+    max-width:800px;
+
+    margin:auto;
+
+    color:#bdbdbd;
+
+    line-height:1.8;
+
+}
+
+.about-story{
+
+    max-width:900px;
+
+    margin:0 auto 80px;
+
+    text-align:center;
+
+}
+
+.about-story h2{
+
+    color:var(--color-gold);
+
+    margin-bottom:25px;
+
+    font-family:var(--font-heading);
+
+}
+
+.about-story p{
+
+    color:#cfcfcf;
+
+    line-height:1.9;
+
+}
+
+.about-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-bottom:80px;
+
+}
+
+.about-card{
+
+    background:#111;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:35px;
+
+    transition:.35s;
+
+    text-align:center;
+
+}
+
+.about-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--color-gold);
+
+}
+
+.about-card h3{
+
+    color:var(--color-gold);
+
+    margin-bottom:15px;
+
+}
+
+.about-card p{
+
+    color:#cfcfcf;
+
+    line-height:1.7;
+
+}
+
+.about-why{
+
+    text-align:center;
+
+}
+
+.about-why h2{
+
+    color:var(--color-gold);
+
+    margin-bottom:25px;
+
+    font-family:var(--font-heading);
+
+}
+
+.about-why ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0 auto 35px;
+
+    max-width:500px;
+
+}
+
+.about-why li{
+
+    padding:12px 0;
+
+    color:#d5d5d5;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+
+.about-why .btn-primary{
+
+    margin-top:20px;
+
+}
