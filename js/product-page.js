@@ -91,6 +91,8 @@ function loadProduct() {
 
     renderRelatedProducts();
 
+    initProductNavigation();
+
     initButtons();
 
 }
@@ -395,5 +397,58 @@ function renderRelatedProducts() {
         </div>
 
     `).join("");
+
+}
+
+function initProductNavigation() {
+
+    const products = ProductsManager.getAll();
+
+    const currentIndex = products.findIndex(
+        p => p.id === currentProduct.id
+    );
+
+    const prevBtn = document.getElementById("prev-product");
+    const nextBtn = document.getElementById("next-product");
+
+    if (prevBtn) {
+
+        if (currentIndex > 0) {
+
+            prevBtn.onclick = () => {
+
+                window.location.href =
+                    "produto.html?id=" +
+                    products[currentIndex - 1].id;
+
+            };
+
+        } else {
+
+            prevBtn.disabled = true;
+
+        }
+
+    }
+
+    if (nextBtn) {
+
+        if (currentIndex < products.length - 1) {
+
+            nextBtn.onclick = () => {
+
+                window.location.href =
+                    "produto.html?id=" +
+                    products[currentIndex + 1].id;
+
+            };
+
+        } else {
+
+            nextBtn.disabled = true;
+
+        }
+
+    }
 
 }
