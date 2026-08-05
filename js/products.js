@@ -29,15 +29,13 @@ const ProductsManager = {
 
 formatMoney(amount) {
 
-    return new Intl.NumberFormat('pt-MZ', {
+    return Number(amount).toLocaleString('pt-PT', {
 
-        style: 'currency',
+        minimumFractionDigits: 2,
 
-        currency: 'MZN',
+        maximumFractionDigits: 2
 
-        minimumFractionDigits: 2
-
-    }).format(amount);
+    }) + " MZN";
 
 },
   getPrice(product) {
