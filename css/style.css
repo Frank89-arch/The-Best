@@ -1190,13 +1190,11 @@ min-height:230px;
 
 .contact-hero p{
 
-    max-width:750px;
+    max-width:900px;
 
-    margin:auto;
+    font-size:1.1rem;
 
-    color:#d5d5d5;
-
-    line-height:1.9;
+    line-height:2;
 
 }
 
@@ -1204,7 +1202,7 @@ min-height:230px;
 
     display:grid;
 
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:0.9fr 1.1fr;
 
     gap:50px;
 
@@ -1221,6 +1219,8 @@ min-height:230px;
 }
 
 .contact-card{
+  
+  transition:.3s;
 
     background:#111;
 
@@ -1229,6 +1229,13 @@ min-height:230px;
     padding:25px;
 
     border-radius:10px;
+    min-height:120px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
 
 }
 
