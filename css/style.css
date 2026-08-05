@@ -944,9 +944,31 @@ button, input, select, textarea {
 
 .about-hero{
 
+    position:relative;
+
+    padding:120px 30px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
     text-align:center;
 
     margin-bottom:80px;
+
+    background:
+        radial-gradient(circle at top,
+        rgba(212,175,55,.18),
+        transparent 45%),
+        linear-gradient(#050505,#111,#050505);
+
+}
+
+.about-hero>*{
+
+    position:relative;
+
+    z-index:1;
 
 }
 
@@ -954,35 +976,47 @@ button, input, select, textarea {
 
     font-family:var(--font-heading);
 
-    font-size:4rem;
+    font-size:5rem;
 
     color:var(--color-gold);
 
-    margin-bottom:15px;
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+
+    text-shadow:0 0 25px rgba(212,175,55,.35);
 
 }
+
 
 .about-slogan{
 
-    font-size:1.4rem;
+    font-size:1.8rem;
 
-    color:#fff;
+    color:#ffffff;
 
     font-weight:600;
 
-    margin-bottom:25px;
+    margin-bottom:35px;
+
+    letter-spacing:1px;
 
 }
 
+
 .about-intro{
 
-    max-width:800px;
+    max-width:820px;
 
     margin:auto;
 
-    color:#bdbdbd;
+    color:#d5d5d5;
 
-    line-height:1.8;
+    font-size:1.15rem;
+
+    line-height:2;
 
 }
 
@@ -1010,7 +1044,7 @@ button, input, select, textarea {
 
     color:#cfcfcf;
 
-    line-height:1.9;
+    line-height:3.9;
 
 }
 
