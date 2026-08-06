@@ -31,9 +31,123 @@
 
 <body>
   <div class="admin-container">
-    <div style="display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;">
 
-    <div>
+<div class="admin-header">
+
+<div>
+
+<h1>Painel Administrativo</h1>
+
+<p>Gestão completa da loja The Best</p>
+
+</div>
+
+<div class="admin-header-actions">
+
+<button id="add-product-btn" class="btn-primary">
+
+<i class="fas fa-plus"></i>
+
+Adicionar Produto
+
+</button>
+
+<button id="logout-btn" class="btn-secondary">
+
+<i class="fas fa-sign-out-alt"></i>
+
+Sair
+
+</button>
+
+</div>
+
+</div>
+
+<div class="dashboard-cards">
+
+<div class="dashboard-card">
+
+<h3 id="total-products">0</h3>
+
+<p>Produtos</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3 id="total-categories">0</h3>
+
+<p>Categorias</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3 id="total-stock">0</h3>
+
+<p>Stock</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3 id="new-products">0</h3>
+
+<p>Novos</p>
+
+</div>
+
+</div>
+
+<div class="admin-toolbar">
+
+<input
+type="text"
+id="admin-search"
+placeholder="Pesquisar produto...">
+
+<select id="admin-category">
+
+<option value="all">
+
+Todas as categorias
+
+</option>
+
+</select>
+
+</div>
+
+<table class="table">
+
+<thead>
+
+<tr>
+
+<th>Imagem</th>
+
+<th>Nome</th>
+
+<th>Categoria</th>
+
+<th>Preço</th>
+
+<th>Stock</th>
+
+<th>Ações</th>
+
+</tr>
+
+</thead>
+
+<tbody id="admin-table">
+
+</tbody>
+
+</table>
+
+</div>
 
         <h1 style="font-family:var(--font-heading);color:var(--color-gold);margin:0;">
             Painel Administrativo
@@ -116,34 +230,31 @@ Eliminar
     </table>
   </div>
 
-  <script src="js/admin-products.js"></script>
-  <script src="js/products.js"></script>
-  <script src="js/admin-dashboard.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', async () => {
-      await ProductsManager.init();
-      AdminDashboard.update();
-      const table = document.getElementById('admin-table');
-      table.innerHTML = ProductsManager.getAll().map(p => `
-        <tr>
-          <td>${p.id}</td>
-          <td>${p.name}</td>
-          <td>${p.category}</td>
-          <td>${ProductsManager.formatMoney(p.price)}</td>
-          <td>
-            <button style="background:none; color:var(--color-gold); cursor:pointer; margin-right:8px;"><i class="fas fa-edit"></i> Editar</button>
-            <button style="background:none; color:#e74c3c; cursor:pointer;"><i class="fas fa-trash"></i> Eliminar</button>
-          </td>
-        </tr>
-      `).join('');
-    });
+<script src="js/products.js"></script>
+
+<script src="js/admin-dashboard.js"></script>
+
+<script src="js/admin-products.js"></script>
+
+<script src="js/admin-auth.js"></script>
+
+<script>
+   document.addEventListener('DOMContentLoaded', async () => {
+
+    await ProductsManager.init();
+
+    AdminDashboard.update();
+
+    renderAdminProducts();
+
+    document
+        .getElementById("logout-btn")
+        .addEventListener("click", logout);
+
+});
   </script>
   <script src="js/admin-auth.js"></script>
-  <script>
 
-document.getElementById("logout-btn").addEventListener("click", logout);
-
-</script>
 <div id="edit-modal" class="admin-modal">
 
     <div class="admin-modal-content">
