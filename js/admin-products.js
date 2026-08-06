@@ -1,10 +1,10 @@
 const AdminProducts = {
 
+    currentProduct: null,
+
     render(products = ProductsManager.getAll()) {
-        console.log("AdminProducts.render()");
 
         const table = document.getElementById("admin-table");
-
 
         table.innerHTML = products.map(p => `
 
@@ -12,14 +12,7 @@ const AdminProducts = {
 
             <td>
 
-                <img
-                    src="${p.image}"
-                    style="
-                        width:60px;
-                        height:60px;
-                        object-fit:cover;
-                        border-radius:8px;
-                    ">
+                <img src="${p.image}" style="width:70px;height:70px;object-fit:cover;border-radius:10px;">
 
             </td>
 
@@ -33,20 +26,12 @@ const AdminProducts = {
 
             <td>
 
-                <button
-                    onclick="AdminProducts.open(ProductsManager.getById('${p.id}'))"
-                    class="btn-secondary">
-
+                <button class="btn-primary edit-btn" data-id="${p.id}">
                     <i class="fas fa-edit"></i>
-
                 </button>
 
-                <button
-                    onclick="AdminProducts.remove('${p.id}')"
-                    class="btn-danger">
-
+                <button class="btn-secondary delete-btn" data-id="${p.id}">
                     <i class="fas fa-trash"></i>
-
                 </button>
 
             </td>
@@ -55,35 +40,62 @@ const AdminProducts = {
 
         `).join("");
 
+        this.bindEvents();
+
     },
 
-    open(product){
+    bindEvents() {
 
-        document.getElementById("edit-modal").style.display="flex";
+        document.querySelectorAll(".edit-btn").forEach(btn => {
 
-        document.getElementById("edit-id").value=product.id;
+            btn.onclick = () => {
 
-        document.getElementById("edit-name").value=product.name;
+                const product = ProductsManager.getById(btn.dataset.id);
 
-        document.getElementById("edit-category").value=product.category;
+                this.open(product);
 
-        document.getElementById("edit-price").value=ProductsManager.getPrice(product);
+            };
 
-        document.getElementById("edit-stock").value=product.stock;
+        });
 
-        document.getElementById("edit-description").value=product.description;
+    },
+
+    open(product = null) {
+
+        this.currentProduct = product;
+
+        document.getElementById("edit-modal").classList.add("show");
+
+        if(product){
+
+            document.getElementById("modal-title").textContent="Editar Produto";
+
+            document.getElementById("edit-id").value=product.id;
+            document.getElementById("edit-name").value=product.name;
+            document.getElementById("edit-category").value=product.category;
+            document.getElementById("edit-price").value=ProductsManager.getPrice(product);
+            document.getElementById("edit-stock").value=product.stock;
+            document.getElementById("edit-description").value=product.description;
+            document.getElementById("edit-image").value=product.image;
+            document.getElementById("edit-material").value=product.material ?? "";
+
+        }else{
+
+            document.getElementById("modal-title").textContent="Novo Produto";
+
+            document.querySelectorAll("#edit-modal input,#edit-modal textarea").forEach(e=>{
+
+                e.value="";
+
+            });
+
+        }
 
     },
 
     close(){
 
-        document.getElementById("edit-modal").style.display="none";
-
-    },
-
-    remove(id){
-
-        alert("A eliminação será implementada no próximo passo.");
+        document.getElementById("edit-modal").classList.remove("show");
 
     }
 
@@ -94,15 +106,3 @@ function renderAdminProducts(){
     AdminProducts.render();
 
 }
-
-document.addEventListener("DOMContentLoaded",()=>{
-
-    const close=document.getElementById("close-edit-modal");
-
-    if(close){
-
-        close.onclick=AdminProducts.close;
-
-    }
-
-});
