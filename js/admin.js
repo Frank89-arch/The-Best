@@ -17,6 +17,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     initCategoryFilter();
 
     renderProducts();
+    document
+.getElementById("add-product-btn")
+.onclick=()=>AdminProducts.open();
+
+document
+.getElementById("close-edit-modal")
+.onclick=()=>AdminProducts.close();
+
+document
+.getElementById("cancel-product")
+.onclick=()=>AdminProducts.close();
 
     if (typeof logout === "function") {
 
