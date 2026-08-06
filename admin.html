@@ -253,7 +253,108 @@
 <script src="js/admin-ui.js"></script>
 <script src="js/admin.js"></script>
 
+<div id="edit-modal" class="admin-modal">
 
+    <div class="admin-modal-content">
+
+        <div class="modal-header">
+
+            <h2 id="modal-title">Novo Produto</h2>
+
+            <button id="close-edit-modal" class="close-modal">
+
+                <i class="fas fa-times"></i>
+
+            </button>
+
+        </div>
+
+        <div class="modal-grid">
+
+            <div>
+
+                <label>Código</label>
+
+                <input id="edit-id" type="text">
+
+            </div>
+
+            <div>
+
+                <label>Nome</label>
+
+                <input id="edit-name" type="text">
+
+            </div>
+
+            <div>
+
+                <label>Categoria</label>
+
+                <input id="edit-category" type="text">
+
+            </div>
+
+            <div>
+
+                <label>Preço</label>
+
+                <input id="edit-price" type="number">
+
+            </div>
+
+            <div>
+
+                <label>Stock</label>
+
+                <input id="edit-stock" type="number">
+
+            </div>
+
+            <div>
+
+                <label>Material</label>
+
+                <input id="edit-material" type="text">
+
+            </div>
+
+        </div>
+
+        <label>Descrição</label>
+
+        <textarea id="edit-description"></textarea>
+
+        <label>Imagem</label>
+
+        <input
+            id="edit-image"
+            type="text"
+            placeholder="img/Produtos/...">
+
+        <div class="modal-actions">
+
+            <button
+                id="cancel-product"
+                class="btn-secondary">
+
+                Cancelar
+
+            </button>
+
+            <button
+                id="save-product"
+                class="btn-primary">
+
+                Guardar
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
 </body>
 
 </html>
