@@ -1,0 +1,437 @@
+/* =====================================================
+   ADMIN 2.0 | THE BEST
+===================================================== */
+
+:root{
+
+    --admin-bg:#111111;
+    --admin-sidebar:#171717;
+    --admin-card:#1f1f1f;
+    --admin-border:#303030;
+    --admin-text:#f5f5f5;
+    --admin-muted:#9b9b9b;
+    --admin-gold:#d4af37;
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+
+    background:#0b0b0b;
+    color:var(--admin-text);
+    font-family:Montserrat,sans-serif;
+
+}
+
+/* ===========================
+LAYOUT
+=========================== */
+
+.admin-layout{
+
+    display:grid;
+
+    grid-template-columns:280px 1fr;
+
+    min-height:100vh;
+
+}
+
+/* ===========================
+SIDEBAR
+=========================== */
+
+.sidebar{
+
+    background:var(--admin-sidebar);
+
+    border-right:1px solid var(--admin-border);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+}
+
+.sidebar-logo{
+
+    text-align:center;
+
+    padding:35px 20px;
+
+}
+
+.sidebar-logo img{
+
+    width:90px;
+
+    margin-bottom:15px;
+
+}
+
+.sidebar-logo h2{
+
+    color:var(--admin-gold);
+
+    font-family:var(--font-heading);
+
+    letter-spacing:2px;
+
+}
+
+.sidebar-menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    padding:20px;
+
+}
+
+.menu-item{
+
+    background:none;
+
+    border:none;
+
+    color:#ddd;
+
+    padding:16px 18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    text-align:left;
+
+    transition:.30s;
+
+    font-size:.95rem;
+
+}
+
+.menu-item i{
+
+    width:26px;
+
+}
+
+.menu-item:hover{
+
+    background:#232323;
+
+}
+
+.menu-item.active{
+
+    background:var(--admin-gold);
+
+    color:#000;
+
+    font-weight:bold;
+
+}
+
+.sidebar-bottom{
+
+    padding:25px;
+
+}
+
+/* ===========================
+ÁREA PRINCIPAL
+=========================== */
+
+.admin-main{
+
+    padding:35px;
+
+}
+
+.topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+    gap:20px;
+
+}
+
+.topbar h1{
+
+    font-size:2.2rem;
+
+    margin-bottom:10px;
+
+}
+
+.topbar p{
+
+    color:var(--admin-muted);
+
+}
+
+/* ===========================
+BOTÕES
+=========================== */
+
+.btn-primary{
+
+    background:var(--admin-gold);
+
+    color:#000;
+
+    border:none;
+
+    padding:14px 24px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.30s;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-2px);
+
+    opacity:.92;
+
+}
+
+/* ===========================
+CARDS
+=========================== */
+
+.dashboard-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.dashboard-card{
+
+    background:var(--admin-card);
+
+    border:1px solid var(--admin-border);
+
+    border-radius:16px;
+
+    padding:35px;
+
+    transition:.30s;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.dashboard-card h2{
+
+    color:var(--admin-gold);
+
+    font-size:2.3rem;
+
+    margin-bottom:10px;
+
+}
+
+.dashboard-card span{
+
+    color:var(--admin-muted);
+
+}
+
+/* ===========================
+TOOLBAR
+=========================== */
+
+.toolbar{
+
+    display:flex;
+
+    gap:15px;
+
+    margin:35px 0;
+
+}
+
+.toolbar input,
+
+.toolbar select{
+
+    flex:1;
+
+    background:#181818;
+
+    color:#fff;
+
+    border:1px solid var(--admin-border);
+
+    border-radius:10px;
+
+    padding:14px;
+
+}
+
+.toolbar input:focus,
+
+.toolbar select:focus{
+
+    outline:none;
+
+    border-color:var(--admin-gold);
+
+}
+
+/* ===========================
+TABELA
+=========================== */
+
+.table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:var(--admin-card);
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+.table thead{
+
+    background:#181818;
+
+}
+
+.table th{
+
+    padding:18px;
+
+    color:var(--admin-gold);
+
+    text-align:left;
+
+}
+
+.table td{
+
+    padding:18px;
+
+    border-top:1px solid var(--admin-border);
+
+}
+
+.table img{
+
+    width:70px;
+
+    height:70px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+}
+
+/* ===========================
+PÁGINAS
+=========================== */
+
+.page{
+
+    display:none;
+
+}
+
+.active-page{
+
+    display:block;
+
+}
+
+/* ===========================
+RESPONSIVO
+=========================== */
+
+@media(max-width:1100px){
+
+.dashboard-cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:900px){
+
+.admin-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.sidebar{
+
+display:none;
+
+}
+
+.topbar{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.dashboard-cards{
+
+grid-template-columns:1fr;
+
+}
+
+.toolbar{
+
+flex-direction:column;
+
+}
+
+}
