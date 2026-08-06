@@ -1,11 +1,10 @@
 const AdminProducts = {
 
-    render() {
+    render(products = ProductsManager.getAll()) {
         console.log("AdminProducts.render()");
 
         const table = document.getElementById("admin-table");
 
-        const products = ProductsManager.getAll();
 
         table.innerHTML = products.map(p => `
 
