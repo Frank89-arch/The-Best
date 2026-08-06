@@ -1,6 +1,7 @@
 const AdminProducts = {
 
     render() {
+        console.log("AdminProducts.render()");
 
         const table = document.getElementById("admin-table");
 
