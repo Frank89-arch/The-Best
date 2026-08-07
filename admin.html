@@ -2,38 +2,28 @@
 <html lang="pt">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Admin Demo | The Best</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    .admin-container {
-      max-width: 1000px;
-      margin: 6rem auto;
-      padding: 2rem;
-      background: var(--color-dark-gray);
-    }
 
-    .table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1.5rem;
-    }
+<meta charset="UTF-8">
 
-    .table th,
-    .table td {
-      padding: 1rem;
-      border-bottom: 1px solid #333;
-      text-align: left;
-    }
-  </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Painel Administrativo | The Best</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/admin.css">
+
 </head>
 
 <body>
 
 <div class="admin-layout">
 
-    <!-- MENU LATERAL -->
+    <!-- SIDEBAR -->
 
     <aside class="sidebar">
 
@@ -111,7 +101,7 @@
 
     </aside>
 
-    <!-- ÁREA PRINCIPAL -->
+    <!-- CONTEÚDO -->
 
     <main class="admin-main">
 
@@ -142,116 +132,201 @@
             </button>
 
         </header>
-
         <!-- DASHBOARD -->
 
-        <section id="dashboard-page" class="page active-page">
+<section id="dashboard-page" class="page active-page">
 
-            <div class="dashboard-cards">
+    <div class="dashboard-cards">
 
-                <div class="dashboard-card">
+        <div class="dashboard-card">
 
-                    <h2 id="total-products">0</h2>
+            <div class="card-icon">
+                <i class="fas fa-box"></i>
+            </div>
 
-                    <span>Produtos</span>
+            <div>
 
-                </div>
+                <h2 id="total-products">0</h2>
 
-                <div class="dashboard-card">
-
-                    <h2 id="total-categories">0</h2>
-
-                    <span>Categorias</span>
-
-                </div>
-
-                <div class="dashboard-card">
-
-                    <h2 id="total-stock">0</h2>
-
-                    <span>Stock</span>
-
-                </div>
-
-                <div class="dashboard-card">
-
-                    <h2 id="new-products">0</h2>
-
-                    <span>Novos</span>
-
-                </div>
+                <span>Total de Produtos</span>
 
             </div>
 
-        </section>
+        </div>
 
-        <!-- PRODUTOS -->
+        <div class="dashboard-card">
 
-        <section id="products-page" class="page">
+            <div class="card-icon">
+                <i class="fas fa-tags"></i>
+            </div>
 
-            <div class="toolbar">
+            <div>
 
-                <input
+                <h2 id="total-categories">0</h2>
 
-                id="admin-search"
-
-                type="text"
-
-                placeholder="Pesquisar produtos...">
-
-                <select id="admin-category">
-
-                    <option value="all">
-
-                        Todas as categorias
-
-                    </option>
-
-                </select>
+                <span>Categorias</span>
 
             </div>
 
-            <table class="table">
+        </div>
 
-                <thead>
+        <div class="dashboard-card">
 
-                    <tr>
+            <div class="card-icon">
+                <i class="fas fa-layer-group"></i>
+            </div>
 
-                        <th>Imagem</th>
+            <div>
 
-                        <th>Produto</th>
+                <h2 id="total-stock">0</h2>
 
-                        <th>Categoria</th>
+                <span>Stock Total</span>
 
-                        <th>Preço</th>
+            </div>
 
-                        <th>Stock</th>
+        </div>
 
-                        <th>Ações</th>
+        <div class="dashboard-card">
 
-                    </tr>
+            <div class="card-icon">
+                <i class="fas fa-star"></i>
+            </div>
 
-                </thead>
+            <div>
 
-                <tbody id="admin-table">
+                <h2 id="new-products">0</h2>
 
-                </tbody>
+                <span>Produtos Novos</span>
 
-            </table>
+            </div>
 
-        </section>
+        </div>
 
-    </main>
+    </div>
 
-</div>
+</section>
 
-<script src="js/products.js"></script>
-<script src="js/admin-auth.js"></script>
-<script src="js/admin-dashboard.js"></script>
-<script src="js/admin-products.js"></script>
-<script src="js/admin-storage.js"></script>
-<script src="js/admin-ui.js"></script>
-<script src="js/admin.js"></script>
+<!-- PRODUTOS -->
+
+<section id="products-page" class="page">
+
+    <div class="toolbar">
+
+        <input
+            id="admin-search"
+            type="text"
+            placeholder="Pesquisar produto...">
+
+        <select id="admin-category">
+
+            <option value="all">
+
+                Todas as categorias
+
+            </option>
+
+        </select>
+
+    </div>
+
+    <div class="table-wrapper">
+
+        <table class="table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Imagem</th>
+
+                    <th>Produto</th>
+
+                    <th>Categoria</th>
+
+                    <th>Preço</th>
+
+                    <th>Stock</th>
+
+                    <th>Ações</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="admin-table">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- CATEGORIAS -->
+
+<section id="categories-page" class="page">
+
+    <div class="coming-soon">
+
+        <i class="fas fa-tags"></i>
+
+        <h2>Categorias</h2>
+
+        <p>Esta área será implementada na próxima fase.</p>
+
+    </div>
+
+</section>
+
+<!-- ENCOMENDAS -->
+
+<section id="orders-page" class="page">
+
+    <div class="coming-soon">
+
+        <i class="fas fa-shopping-cart"></i>
+
+        <h2>Encomendas</h2>
+
+        <p>Gestão de encomendas em desenvolvimento.</p>
+
+    </div>
+
+</section>
+
+<!-- MARKETING -->
+
+<section id="marketing-page" class="page">
+
+    <div class="coming-soon">
+
+        <i class="fas fa-bullhorn"></i>
+
+        <h2>Marketing</h2>
+
+        <p>Promoções e campanhas serão adicionadas.</p>
+
+    </div>
+
+</section>
+
+<!-- CONFIGURAÇÕES -->
+
+<section id="settings-page" class="page">
+
+    <div class="coming-soon">
+
+        <i class="fas fa-cog"></i>
+
+        <h2>Configurações</h2>
+
+        <p>Área de configuração da loja.</p>
+
+    </div>
+
+</section>
+<!-- MODAL ADICIONAR / EDITAR PRODUTO -->
 
 <div id="edit-modal" class="admin-modal">
 
@@ -269,92 +344,183 @@
 
         </div>
 
-        <div class="modal-grid">
+        <div class="modal-body">
 
-            <div>
+            <div class="modal-grid">
 
-                <label>Código</label>
+                <div class="form-group">
 
-                <input id="edit-id" type="text">
+                    <label>Código</label>
+
+                    <input
+                        type="text"
+                        id="edit-id"
+                        placeholder="TB-0001">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Nome</label>
+
+                    <input
+                        type="text"
+                        id="edit-name">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Categoria</label>
+
+                    <input
+                        type="text"
+                        id="edit-category">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Preço</label>
+
+                    <input
+                        type="number"
+                        id="edit-price">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Stock</label>
+
+                    <input
+                        type="number"
+                        id="edit-stock">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Material</label>
+
+                    <input
+                        type="text"
+                        id="edit-material">
+
+                </div>
 
             </div>
 
-            <div>
+            <div class="form-group">
 
-                <label>Nome</label>
+                <label>Descrição</label>
 
-                <input id="edit-name" type="text">
-
-            </div>
-
-            <div>
-
-                <label>Categoria</label>
-
-                <input id="edit-category" type="text">
+                <textarea
+                    id="edit-description"
+                    rows="5"></textarea>
 
             </div>
 
-            <div>
+            <div class="form-group">
 
-                <label>Preço</label>
+                <label>Imagem Principal</label>
 
-                <input id="edit-price" type="number">
-
-            </div>
-
-            <div>
-
-                <label>Stock</label>
-
-                <input id="edit-stock" type="number">
+                <input
+                    type="text"
+                    id="edit-image"
+                    placeholder="img/Produtos/...">
 
             </div>
 
-            <div>
+            <div class="form-group">
 
-                <label>Material</label>
+                <label>Galeria (uma imagem por linha)</label>
 
-                <input id="edit-material" type="text">
+                <textarea
+                    id="edit-gallery"
+                    rows="4"></textarea>
 
             </div>
 
-        </div>
+            <div class="form-group">
 
-        <label>Descrição</label>
+                <label>Tamanhos disponíveis</label>
 
-        <textarea id="edit-description"></textarea>
+                <div class="sizes">
 
-        <label>Imagem</label>
+                    <label><input type="checkbox" value="XS"> XS</label>
 
-        <input
-            id="edit-image"
-            type="text"
-            placeholder="img/Produtos/...">
+                    <label><input type="checkbox" value="S"> S</label>
 
-        <div class="modal-actions">
+                    <label><input type="checkbox" value="M"> M</label>
 
-            <button
-                id="cancel-product"
-                class="btn-secondary">
+                    <label><input type="checkbox" value="L"> L</label>
 
-                Cancelar
+                    <label><input type="checkbox" value="XL"> XL</label>
 
-            </button>
+                    <label><input type="checkbox" value="XXL"> XXL</label>
 
-            <button
-                id="save-product"
-                class="btn-primary">
+                </div>
 
-                Guardar
+            </div>
 
-            </button>
+            <div class="form-group">
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        id="edit-new">
+
+                    Produto Novo
+
+                </label>
+
+            </div>
+
+            <div class="modal-actions">
+
+                <button
+                    id="cancel-product"
+                    class="btn-secondary">
+
+                    Cancelar
+
+                </button>
+
+                <button
+                    id="save-product"
+                    class="btn-primary">
+
+                    Guardar Produto
+
+                </button>
+
+            </div>
 
         </div>
 
     </div>
 
 </div>
+    </main>
+
+</div>
+
+<script src="js/products.js"></script>
+
+<script src="js/admin-auth.js"></script>
+
+<script src="js/admin-dashboard.js"></script>
+
+<script src="js/admin-products.js"></script>
+
+<script src="js/admin-storage.js"></script>
+
+<script src="js/admin-ui.js"></script>
+
+<script src="js/admin.js"></script>
+
 </body>
 
 </html>
