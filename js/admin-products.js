@@ -106,3 +106,45 @@ function renderAdminProducts(){
     AdminProducts.render();
 
 }
+document.getElementById("save-product").addEventListener("click", () => {
+
+    const id = document.getElementById("edit-id").value;
+
+    const product = ProductsManager.getById(id);
+
+    if (!product) {
+
+        alert("Produto não encontrado.");
+
+        return;
+
+    }
+
+    product.name = document.getElementById("edit-name").value;
+
+    product.category = document.getElementById("edit-category").value;
+
+    product.price = Number(document.getElementById("edit-price").value);
+
+    product.stock = Number(document.getElementById("edit-stock").value);
+
+    product.material = document.getElementById("edit-material").value;
+
+    product.description = document.getElementById("edit-description").value;
+
+    product.image = document.getElementById("edit-image").value;
+
+    localStorage.setItem(
+        "thebest_custom_products",
+        JSON.stringify(ProductsManager.getAll())
+    );
+
+    AdminProducts.close();
+
+    renderAdminProducts();
+
+    AdminDashboard.update();
+
+    alert("Produto actualizado com sucesso.");
+
+});
