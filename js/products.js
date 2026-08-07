@@ -29,7 +29,9 @@ const ProductsManager = {
 
 formatMoney(amount) {
 
-    return Number(amount).toLocaleString('pt-PT', {
+    amount = Number(amount) || 0;
+
+    return amount.toLocaleString("pt-PT", {
 
         minimumFractionDigits: 2,
 
@@ -39,7 +41,13 @@ formatMoney(amount) {
 
 },
   getPrice(product) {
-  return getPrice(product.category, product.model);
+
+    if (typeof product.price !== "undefined") {
+        return Number(product.price);
+    }
+
+    return 0;
+
 },
 
 getCategories() {
