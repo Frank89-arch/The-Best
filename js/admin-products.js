@@ -60,38 +60,55 @@ const AdminProducts = {
 
     },
 
-    open(product = null) {
+   open(product = null) {
 
-        this.currentProduct = product;
+    this.currentProduct = product;
 
-        document.getElementById("edit-modal").classList.add("show");
+    const modal = document.getElementById("edit-modal");
 
-        if(product){
+    modal.classList.add("show");
 
-            document.getElementById("modal-title").textContent="Editar Produto";
+    if (product) {
 
-            document.getElementById("edit-id").value=product.id;
-            document.getElementById("edit-name").value=product.name;
-            document.getElementById("edit-category").value=product.category;
-            document.getElementById("edit-price").value=ProductsManager.getPrice(product);
-            document.getElementById("edit-stock").value=product.stock;
-            document.getElementById("edit-description").value=product.description;
-            document.getElementById("edit-image").value=product.image;
-            document.getElementById("edit-material").value=product.material ?? "";
+        document.getElementById("modal-title").textContent = "Editar Produto";
 
-        }else{
+        document.getElementById("edit-id").value = product.id;
+        document.getElementById("edit-name").value = product.name;
+        document.getElementById("edit-category").value = product.category;
+        document.getElementById("edit-price").value =
+            ProductsManager.getPrice(product);
+        document.getElementById("edit-stock").value = product.stock || 0;
+        document.getElementById("edit-material").value =
+            product.material || "";
+        document.getElementById("edit-description").value =
+            product.description || "";
+        document.getElementById("edit-image").value =
+            product.image || "";
 
-            document.getElementById("modal-title").textContent="Novo Produto";
+        document.getElementById("edit-gallery").value =
+            (product.gallery || []).join("\n");
 
-            document.querySelectorAll("#edit-modal input,#edit-modal textarea").forEach(e=>{
+        document.getElementById("edit-new").checked =
+            product.isNew === true;
 
-                e.value="";
+    } else {
 
-            });
+        document.getElementById("modal-title").textContent = "Novo Produto";
 
-        }
+        document.getElementById("edit-id").value = "";
+        document.getElementById("edit-name").value = "";
+        document.getElementById("edit-category").value = "";
+        document.getElementById("edit-price").value = "";
+        document.getElementById("edit-stock").value = "";
+        document.getElementById("edit-material").value = "";
+        document.getElementById("edit-description").value = "";
+        document.getElementById("edit-image").value = "";
+        document.getElementById("edit-gallery").value = "";
+        document.getElementById("edit-new").checked = false;
 
-    },
+    }
+
+},
 
     close(){
 
@@ -115,42 +132,128 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    saveButton.addEventListener("click", () => {
+saveButton.addEventListener("click", () => {
 
-        const id = document.getElementById("edit-id").value;
+    const id = document.getElementById("edit-id").value.trim();
+    const name = document.getElementById("edit-name").value.trim();
+    const category = document.getElementById("edit-category").value.trim();
+    const price = Number(document.getElementById("edit-price").value) || 0;
+    const stock = Number(document.getElementById("edit-stock").value) || 0;
+    const material = document.getElementById("edit-material").value.trim();
+    const description = document.getElementById("edit-description").value.trim();
+    const image = document.getElementById("edit-image").value.trim();
+    const galleryText = document.getElementById("edit-gallery").value.trim();
+    const isNew = document.getElementById("edit-new").checked;
+
+    if (!name) {
+
+        alert("Digite o nome do produto.");
+
+        return;
+
+    }
+
+    if (!category) {
+
+        alert("Digite a categoria do produto.");
+
+        return;
+
+    }
+
+    if (!id) {
+
+        const newId = "TB-" + Date.now();
+
+        const newProduct = {
+
+            id: newId,
+
+            name: name,
+
+            category: category.toLowerCase(),
+
+            model: "standard",
+
+            price: price,
+
+            sizes: [],
+
+            material: material,
+
+            collection: "The Best Collection",
+
+            stock: stock,
+
+            isNew: isNew,
+
+            isSale: false,
+
+            image: image,
+
+            gallery: galleryText
+                ? galleryText.split("\n").map(item => item.trim()).filter(Boolean)
+                : image
+                    ? [image]
+                    : [],
+
+            description: description
+
+        };
+
+        ProductsManager.products.push(newProduct);
+
+    } else {
 
         const product = ProductsManager.getById(id);
 
         if (!product) {
+
             alert("Produto não encontrado.");
+
             return;
+
         }
 
-        product.name =
-            document.getElementById("edit-name").value.trim();
+        product.name = name;
+        product.category = category.toLowerCase();
+        product.price = price;
+        product.stock = stock;
+        product.material = material;
+        product.description = description;
+        product.image = image;
+        product.isNew = isNew;
 
-        product.category =
-            document.getElementById("edit-category").value.trim();
+        product.gallery = galleryText
+            ? galleryText.split("\n").map(item => item.trim()).filter(Boolean)
+            : image
+                ? [image]
+                : [];
 
-        product.price =
-            Number(document.getElementById("edit-price").value) || 0;
+    }
 
-        product.stock =
-            Number(document.getElementById("edit-stock").value) || 0;
+    localStorage.setItem(
+        "thebest_custom_products",
+        JSON.stringify(ProductsManager.getAll())
+    );
 
-        product.material =
-            document.getElementById("edit-material").value.trim();
+    AdminProducts.close();
 
-        product.description =
-            document.getElementById("edit-description").value.trim();
+    AdminProducts.render();
 
-        product.image =
-            document.getElementById("edit-image").value.trim();
+    if (typeof AdminDashboard !== "undefined") {
 
-        localStorage.setItem(
-            "thebest_custom_products",
-            JSON.stringify(ProductsManager.getAll())
-        );
+        AdminDashboard.update();
+
+    }
+
+    alert(
+        id
+            ? "Produto actualizado com sucesso."
+            : "Produto adicionado com sucesso."
+    );
+
+});
 
         AdminProducts.close();
 
@@ -164,4 +267,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-});
+const addProductButton = document.getElementById("add-product-btn");
+
+if (addProductButton) {
+
+    addProductButton.addEventListener("click", () => {
+
+        AdminProducts.open();
+
+    });
+
+}
