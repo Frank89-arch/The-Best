@@ -106,45 +106,62 @@ function renderAdminProducts(){
     AdminProducts.render();
 
 }
-document.getElementById("save-product").addEventListener("click", () => {
+document.addEventListener("DOMContentLoaded", () => {
 
-    const id = document.getElementById("edit-id").value;
+    const saveButton = document.getElementById("save-product");
 
-    const product = ProductsManager.getById(id);
-
-    if (!product) {
-
-        alert("Produto não encontrado.");
-
+    if (!saveButton) {
+        console.error("Botão Guardar Produto não encontrado.");
         return;
-
     }
 
-    product.name = document.getElementById("edit-name").value;
+    saveButton.addEventListener("click", () => {
 
-    product.category = document.getElementById("edit-category").value;
+        const id = document.getElementById("edit-id").value;
 
-    product.price = Number(document.getElementById("edit-price").value);
+        const product = ProductsManager.getById(id);
 
-    product.stock = Number(document.getElementById("edit-stock").value);
+        if (!product) {
+            alert("Produto não encontrado.");
+            return;
+        }
 
-    product.material = document.getElementById("edit-material").value;
+        product.name =
+            document.getElementById("edit-name").value.trim();
 
-    product.description = document.getElementById("edit-description").value;
+        product.category =
+            document.getElementById("edit-category").value.trim();
 
-    product.image = document.getElementById("edit-image").value;
+        product.price =
+            Number(document.getElementById("edit-price").value) || 0;
 
-    localStorage.setItem(
-        "thebest_custom_products",
-        JSON.stringify(ProductsManager.getAll())
-    );
+        product.stock =
+            Number(document.getElementById("edit-stock").value) || 0;
 
-    AdminProducts.close();
+        product.material =
+            document.getElementById("edit-material").value.trim();
 
-    renderAdminProducts();
+        product.description =
+            document.getElementById("edit-description").value.trim();
 
-    AdminDashboard.update();
+        product.image =
+            document.getElementById("edit-image").value.trim();
 
-    alert("Produto actualizado com sucesso.");
+        localStorage.setItem(
+            "thebest_custom_products",
+            JSON.stringify(ProductsManager.getAll())
+        );
+
+        AdminProducts.close();
+
+        AdminProducts.render();
+
+        if (typeof AdminDashboard !== "undefined") {
+            AdminDashboard.update();
+        }
+
+        alert("Produto actualizado com sucesso.");
+
+    });
 
 });
